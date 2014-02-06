@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.SearchPanel">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="704" height="509"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="f64de" binding="menu" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <nested-form id="99d94" form-file="view/MainMenu.form">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </nested-form>
+        </children>
+      </grid>
+      <hspacer id="b1270">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <grid id="fd840" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="15" left="15" bottom="15" right="15"/>
+        <constraints>
+          <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="4ba1e" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1a916" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="numer indeksu (student):"/>
+                </properties>
+              </component>
+              <component id="562ca" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="kod pracownika (pracownik):"/>
+                </properties>
+              </component>
+              <component id="436f5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="imię:"/>
+                </properties>
+              </component>
+              <component id="416f8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="nazwisko:"/>
+                </properties>
+              </component>
+              <component id="5dbb0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Podstawowe"/>
+                </properties>
+              </component>
+              <component id="493ba" class="javax.swing.JCheckBox" binding="advCheckBox">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="2"/>
+                  <selected value="false"/>
+                  <text value="Zaawansowane wyszukiwanie"/>
+                </properties>
+              </component>
+              <component id="f4e16" class="javax.swing.JFormattedTextField" binding="_studentBook">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="170" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                </properties>
+              </component>
+              <component id="8273a" class="javax.swing.JFormattedTextField" binding="_staffCode">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="170" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                </properties>
+              </component>
+              <component id="b8222" class="javax.swing.JFormattedTextField" binding="_fName">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="170" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                </properties>
+              </component>
+              <component id="cfda7" class="javax.swing.JFormattedTextField" binding="_lName">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="170" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                </properties>
+              </component>
+              <grid id="f8339" binding="advancedSearch" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="true" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <visible value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5b7c0" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="PESEL:"/>
+                    </properties>
+                  </component>
+                  <component id="46619" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="e-mail:"/>
+                    </properties>
+                  </component>
+                  <component id="4fe1a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="drugie imię:"/>
+                    </properties>
+                  </component>
+                  <component id="3ac4f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="data urodzenia:"/>
+                    </properties>
+                  </component>
+                  <component id="415a4" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="tytuł naukowy (pracownik):"/>
+                    </properties>
+                  </component>
+                  <component id="9849e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="status:"/>
+                    </properties>
+                  </component>
+                  <component id="cc007" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="wydział:"/>
+                    </properties>
+                  </component>
+                  <component id="90782" class="javax.swing.JFormattedTextField" binding="_pesel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="4"/>
+                    </properties>
+                  </component>
+                  <component id="b7db" class="javax.swing.JFormattedTextField" binding="_mail">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="4"/>
+                    </properties>
+                  </component>
+                  <component id="99dae" class="javax.swing.JFormattedTextField" binding="_sName">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="4"/>
+                    </properties>
+                  </component>
+                  <component id="3712c" class="javax.swing.JFormattedTextField" binding="_dateOfBirth">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="4"/>
+                    </properties>
+                  </component>
+                  <component id="631f3" class="javax.swing.JFormattedTextField" binding="_acadTitle">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="4"/>
+                    </properties>
+                  </component>
+                  <component id="7b7ef" class="javax.swing.JComboBox" binding="_status">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="256af" class="javax.swing.JComboBox" binding="_department">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a2e23" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="15" left="15" bottom="15" right="15"/>
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="c25b0" class="javax.swing.JButton" binding="searchButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="Szukaj"/>
+                      <verticalAlignment value="1"/>
+                      <verticalTextPosition value="1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
