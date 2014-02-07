@@ -23,17 +23,19 @@ class SearchResultPanel {
     public SearchResultPanel(final String[] columnNames, String _query) {
         try {
             ret = Utility.getDataWithException(_query);
-        } catch(SQLException e) {
+        } catch (SQLException e) {
             JOptionPane.showConfirmDialog(Window.mainFrame, "Błąd zapytania", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
-        if(ret == null) ret = new Vector<>();
+        if (ret == null) ret = new Vector<>();
 
         TableModel dataModel = new AbstractTableModel() {
             @Override
             public int getColumnCount() {
-                if(ret.firstElement() != null) return ret.firstElement().size();
-                else return 0;
+                if (ret.firstElement() != null)
+                    return ret.firstElement().size();
+                else
+                    return 0;
             }
 
             @Override
@@ -62,7 +64,7 @@ class SearchResultPanel {
         table1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(e.getClickCount() == 2) {
+                if (e.getClickCount() == 2) {
                     JTable target = (JTable) e.getSource();
                     int row = target.getSelectedRow();
 
