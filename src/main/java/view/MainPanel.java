@@ -11,12 +11,14 @@ import java.awt.*;
 class MainPanel {
     private JPanel root;
 
-    public MainPanel() { slider1.addChangeListener(new ChangeListener() {
-        @Override
-        public void stateChanged(ChangeEvent e) {
-            labelek.setFont(new Font(labelek.getFont().getName(),Font.PLAIN,slider1.getValue()));
-        }
-    });}
+    public MainPanel() {
+        slider1.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                labelek.setFont(new Font(labelek.getFont().getName(), Font.PLAIN, slider1.getValue()));
+            }
+        });
+    }
 
 
     private JPanel menu;
@@ -31,4 +33,5 @@ class MainPanel {
     public JPanel getRoot() {
         return root;
     }
+
 }

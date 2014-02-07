@@ -15,6 +15,20 @@ public class User {
     public static String address;
     public static String mail;
     public static String phone;
+
+    // student
+    public static String studentBook;
+
+    // staff
+    public static String staffCode;
+    public static String room;
+    public static String post;
+    public static String academicTitle;
+    public static String cathedral;
+
+
+
+
     public static Image photo;
     public static LinkedList<Long> studentsBranchesIds = new LinkedList<>();
     public static String studentsBranchesIdsAsSQLSet = null;

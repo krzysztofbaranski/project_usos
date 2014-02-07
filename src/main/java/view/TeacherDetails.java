@@ -3,6 +3,7 @@ package view;
 import controler.Utility;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.Vector;
 
 /**
@@ -17,8 +18,10 @@ public class TeacherDetails {
         _name.setText(v.get(0).get(0) + " " + v.get(0).get(1));
 
     }
+
     public JPanel getRoot() {
 
         return root;
     }
+
 }

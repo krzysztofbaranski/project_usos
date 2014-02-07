@@ -6,6 +6,7 @@ import controler.Utility;
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.SQLException;
@@ -22,16 +23,16 @@ class SearchResultPanel {
     public SearchResultPanel(final String[] columnNames, String _query) {
         try {
             ret = Utility.getDataWithException(_query);
-        } catch(SQLException e) {
-            JOptionPane.showConfirmDialog(Window.mainFrame,"Błąd zapytania","Error",JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException e) {
+            JOptionPane.showConfirmDialog(Window.mainFrame, "Błąd zapytania", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
-        if(ret == null) ret = new Vector<>();
+        if (ret == null) ret = new Vector<>();
 
         TableModel dataModel = new AbstractTableModel() {
             @Override
             public int getColumnCount() {
-                if(ret.firstElement() != null)
+                if (ret.firstElement() != null)
                     return ret.firstElement().size();
                 else
                     return 0;
@@ -64,10 +65,10 @@ class SearchResultPanel {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getClickCount() == 2) {
-                    JTable target = (JTable)e.getSource();
+                    JTable target = (JTable) e.getSource();
                     int row = target.getSelectedRow();
 
-                    Window.mainFrame.setContentPane(new AccountPanel((String)target.getValueAt(row,target.getColumnCount() - 2)).getRoot());
+                    Window.mainFrame.setContentPane(new AccountPanel((String) target.getValueAt(row, target.getColumnCount() - 2)).getRoot());
                     Window.mainFrame.setVisible(true);
                 }
             }
@@ -77,4 +78,5 @@ class SearchResultPanel {
     public JPanel getRoot() {
         return root;
     }
+
 }

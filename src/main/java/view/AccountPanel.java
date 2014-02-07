@@ -17,8 +17,7 @@ import java.util.Vector;
 
 /**
  * Created by krzysztof on 06/02/14.
- *
- */aaaaaaa
+ */
 class AccountPanel {
     private JPanel menu;
     private JLabel _name;
@@ -42,24 +41,23 @@ class AccountPanel {
         _mail.setText(User.mail);
         _phone.setText(User.phone);
 
-        if(User.photo != null) {
+        if (User.photo != null) {
             _photoLabel.setIcon(new ImageIcon(User.photo));
             removePhoto.setEnabled(true);
         }
 
 
-        
         _changeAddress.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!_address.isEditable()) {
+                if (!_address.isEditable()) {
                     _address.setEditable(true);
                     _changeAddress.setText("OK");
                 } else {
                     String newAddress = _address.getText();
                     try {
-                        Persons.changePerson(User.person_id,"address",newAddress);
-                    } catch(SQLException e1) {
+                        Persons.changePerson(User.person_id, "address", newAddress);
+                    } catch (SQLException e1) {
                         _address.setText(User.address);
                         _address.setEditable(false);
                         _changeAddress.setText("...");
@@ -74,14 +72,14 @@ class AccountPanel {
         _changeMail.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!_mail.isEditable()) {
+                if (!_mail.isEditable()) {
                     _mail.setEditable(true);
                     _changeMail.setText("OK");
                 } else {
                     String newMail = _mail.getText();
                     try {
                         Persons.changePerson(User.person_id, "mail", newMail);
-                    } catch(SQLException e1) {
+                    } catch (SQLException e1) {
                         _mail.setText(User.mail);
                         _mail.setEditable(false);
                         _changeMail.setText("...");
@@ -96,14 +94,14 @@ class AccountPanel {
         _changePhone.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!_phone.isEditable()) {
+                if (!_phone.isEditable()) {
                     _phone.setEditable(true);
                     _changePhone.setText("OK");
                 } else {
                     String newPhone = _phone.getText();
                     try {
-                        Persons.changePerson(User.person_id,"phone",newPhone);
-                    } catch(SQLException e1) {
+                        Persons.changePerson(User.person_id, "phone", newPhone);
+                    } catch (SQLException e1) {
                         _phone.setText(User.phone);
                         _phone.setEditable(false);
                         _changePhone.setText("...");
@@ -122,12 +120,12 @@ class AccountPanel {
                 fc.setFileFilter(new FileNameExtensionFilter("(*.png, *.jpg, *.gif)", "png", "jpg", "gif"));
                 fc.setAcceptAllFileFilterUsed(false);
                 int returnVal = fc.showOpenDialog(Window.mainFrame);
-                if(returnVal == JFileChooser.APPROVE_OPTION) {
+                if (returnVal == JFileChooser.APPROVE_OPTION) {
                     File file = fc.getSelectedFile();
                     Utility.updatePhoto(User.person_id, file);
                     User.photo = Utility.getPhoto(User.person_id);
-                    if(User.photo != null) {
-                        User.photo = User.photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
+                    if (User.photo != null) {
+                        User.photo = User.photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
                     }
                     removePhoto.setEnabled(true);
                     Window.mainFrame.setContentPane(new AccountPanel().getRoot());
@@ -140,8 +138,8 @@ class AccountPanel {
             public void actionPerformed(ActionEvent e) {
                 try {
                     Utility.updateData("update persons set photo = null where id = " + User.person_id);
-                } catch(SQLException e1) {
-                    JOptionPane.showConfirmDialog(Window.mainFrame,"Nie można usunąć","Error",JOptionPane.ERROR_MESSAGE);
+                } catch (SQLException e1) {
+                    JOptionPane.showConfirmDialog(Window.mainFrame, "Nie można usunąć", "Error", JOptionPane.ERROR_MESSAGE);
                 }
                 User.photo = null;
                 removePhoto.setEnabled(false);
@@ -154,7 +152,7 @@ class AccountPanel {
 
     public AccountPanel(final String mail) {
         Vector<Vector<Object>> v;
-        v = Utility.getData("select id,fname,lname,(select name from statuses where id=status_id),address,mail,phone from persons where mail ='"+mail+"'");
+        v = Utility.getData("select id,fname,lname,(select name from statuses where id=status_id),address,mail,phone from persons where mail ='" + mail + "'");
 
         final Long id = (Long) v.elementAt(0).elementAt(0);
         _name.setText(v.elementAt(0).elementAt(1) + " " + v.elementAt(0).elementAt(2));
@@ -164,13 +162,13 @@ class AccountPanel {
         _phone.setText((String) v.elementAt(0).elementAt(6));
 
         Image _photo = Utility.getPhoto(id);
-        if(_photo != null) {
-            _photo = _photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
+        if (_photo != null) {
+            _photo = _photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
             _photoLabel.setIcon(new ImageIcon(_photo));
             removePhoto.setEnabled(true);
         }
 
-        if(User.person_id != Settings.superuser) {
+        if (User.person_id != Settings.superuser) {
             _changeAddress.setVisible(false);
             _changeMail.setVisible(false);
             _changePhone.setVisible(false);
@@ -181,14 +179,14 @@ class AccountPanel {
             _changeAddress.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if(!_address.isEditable()) {
+                    if (!_address.isEditable()) {
                         _address.setEditable(true);
                         _changeAddress.setText("OK");
                     } else {
                         String newAddress = _address.getText();
                         try {
-                            Persons.changePerson(id,"address",newAddress);
-                        } catch(SQLException e1) {
+                            Persons.changePerson(id, "address", newAddress);
+                        } catch (SQLException e1) {
                             _address.setText((String) finalV.elementAt(0).elementAt(4));
                             _address.setEditable(false);
                             _changeAddress.setText("...");
@@ -202,14 +200,14 @@ class AccountPanel {
             _changeMail.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if(!_mail.isEditable()) {
+                    if (!_mail.isEditable()) {
                         _mail.setEditable(true);
                         _changeMail.setText("OK");
                     } else {
                         String newMail = _mail.getText();
                         try {
                             Persons.changePerson(id, "mail", newMail);
-                        } catch(SQLException e1) {
+                        } catch (SQLException e1) {
                             _mail.setText((String) finalV.elementAt(0).elementAt(5));
                             _mail.setEditable(false);
                             _changeMail.setText("...");
@@ -223,14 +221,14 @@ class AccountPanel {
             _changePhone.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    if(!_phone.isEditable()) {
+                    if (!_phone.isEditable()) {
                         _phone.setEditable(true);
                         _changePhone.setText("OK");
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(id,"phone",newPhone);
-                        } catch(SQLException e1) {
+                            Persons.changePerson(id, "phone", newPhone);
+                        } catch (SQLException e1) {
                             _phone.setText((String) finalV.elementAt(0).elementAt(6));
                             _phone.setEditable(false);
                             _changePhone.setText("...");
@@ -248,7 +246,7 @@ class AccountPanel {
                     fc.setFileFilter(new FileNameExtensionFilter("(*.png, *.jpg, *.gif)", "png", "jpg", "gif"));
                     fc.setAcceptAllFileFilterUsed(false);
                     int returnVal = fc.showOpenDialog(Window.mainFrame);
-                    if(returnVal == JFileChooser.APPROVE_OPTION) {
+                    if (returnVal == JFileChooser.APPROVE_OPTION) {
                         File file = fc.getSelectedFile();
                         Utility.updatePhoto(id, file);
 
@@ -263,7 +261,7 @@ class AccountPanel {
                 public void actionPerformed(ActionEvent e) {
                     try {
                         Utility.updateData("update persons set photo = null where id = " + id);
-                    } catch(SQLException e1) {
+                    } catch (SQLException e1) {
                         JOptionPane.showConfirmDialog(Window.mainFrame, "Nie można usunąć", "Error", JOptionPane.ERROR_MESSAGE);
                     }
                     removePhoto.setEnabled(false);
@@ -279,4 +277,5 @@ class AccountPanel {
 
         return root;
     }
+
 }

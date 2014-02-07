@@ -1,6 +1,7 @@
 package view;
 
 import app.Settings;
+import app.User;
 import controler.Learning;
 import controler.Utility;
 
@@ -22,7 +23,7 @@ public class CourseDetails {
     private JTextArea opis;
     private JScrollPane scroll;
     private JTable grupy;
-    private JTable xxx;
+    private JTable kierunki;
     Vector<Vector<Object>> v;
     Vector<Vector<Object>> vGroups;
 
@@ -33,16 +34,15 @@ public class CourseDetails {
         titlePane.setText("" + v.get(0).get(0));
         opis.setText("ECTS: " + v.get(0).get(1));
 
-        /**** oceny ****/
         final boolean onlyCurrent = false;
 
-        if(onlyCurrent) vGroups = Utility.getData(Learning.getCourseGroups(courseId, Settings.academic_year, Settings.semester));
-        vGroups = Utility.getData(Learning.getCourseGroups(courseId, -1, -1));
-System.out.println(Learning.getCourseGroups(courseId, -1, -1));
+            vGroups = Utility.getData(Learning.getCourseGroups(courseId, Settings.academic_year, Settings.semester));
+        System.out.println(Learning.getCourseGroups(courseId, -1, -1));
         System.out.println(vGroups.size());
         for (Vector<Object> vv : vGroups)
             for (Object o : vv)
                 System.out.println(o);
+        System.out.println(User.post);
 
         TableModel model = new AbstractTableModel() {
 
@@ -61,16 +61,13 @@ System.out.println(Learning.getCourseGroups(courseId, -1, -1));
             }
 
             public Object getValueAt(int row, int col) {
-                if(onlyCurrent) {
-                    if(col==2) return Settings.academic_year;
-                    if(col==3) return Settings.semester;
-                }
+                    if (col == 2) return Settings.academic_year;
+                    if (col == 3) return Settings.semester;
                 return vGroups.get(row).get(col + 1);
             }
         };
 
         grupy.setModel(model);
-        xxx.setModel(model);
         grupy.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -84,10 +81,15 @@ System.out.println(Learning.getCourseGroups(courseId, -1, -1));
             }
 
         });
+
+
+
+
     }
 
     public JPanel getRoot() {
 
         return root;
     }
+
 }
