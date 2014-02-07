@@ -10,7 +10,6 @@ import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.Set;
 import java.util.Vector;
 
 /**
@@ -23,6 +22,7 @@ public class CourseDetails {
     private JTextArea opis;
     private JScrollPane scroll;
     private JTable grupy;
+    private JTable xxx;
     Vector<Vector<Object>> v;
     Vector<Vector<Object>> vGroups;
 
@@ -44,7 +44,7 @@ System.out.println(Learning.getCourseGroups(courseId, -1, -1));
             for (Object o : vv)
                 System.out.println(o);
 
-        TableModel marksModel = new AbstractTableModel() {
+        TableModel model = new AbstractTableModel() {
 
             private final Object[] columnNames = {"grupa", "typ", "rok", "semestr"};
 
@@ -69,7 +69,8 @@ System.out.println(Learning.getCourseGroups(courseId, -1, -1));
             }
         };
 
-        grupy.setModel(marksModel);
+        grupy.setModel(model);
+        xxx.setModel(model);
         grupy.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
