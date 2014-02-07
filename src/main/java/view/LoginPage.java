@@ -36,8 +36,10 @@ public class LoginPage {
 
                     // udalo sie zalogowac
                     if(v.elementAt(0).elementAt(0) != null && ((Boolean)v.elementAt(0).elementAt(0))) {
+
                         // ustawienia konta
                         User.person_id = (long) v.elementAt(0).elementAt(1);
+
                         v = Utility.getDataWithException("select fname,sname,lname,address,mail," +
                                 "(select name from statuses where id=status_id),phone,student_book,staff_code,academic_title,room,post," +
                                 "(select name from cathedrals where id=cathedral_id) " +
