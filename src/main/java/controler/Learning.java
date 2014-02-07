@@ -29,10 +29,10 @@ public class Learning {
 
     public static String getGroupStudentsSQL(long groupId, boolean branchInfoToo) {
         return "select persons.id, fname, lname "
-                + ((branchInfoToo) ? ("branch_id, students_branches.semester ") : "")
+                + ((branchInfoToo) ? ("branch_id, branches.name, students_branches.semester ") : "")
                 + "from groups join students_branches__groups "
                 + "on group_id = id join students_branches on student_branch_id "
-                + " = students_branches.id join persons on student_id = persons.id "
+                + " = students_branches.id join persons on student_id = persons.id join branches on branch_id = branches.id "
                 + "where group_id = " + groupId;
 
     }
@@ -76,7 +76,7 @@ public class Learning {
     }
 
     public static String getClasses (long groupId) {
-        return "select * from classes where group_id = " + groupId;
+        return "select day_of_week, start, stop, classroom from classes where group_id = " + groupId;
     }
 
     /**

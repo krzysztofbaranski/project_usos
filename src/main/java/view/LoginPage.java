@@ -32,12 +32,18 @@ public class LoginPage {
                             _passwd.getText() +
                             "'), 'hex') = (select passwd from passwords where person_id = (select id from persons where mail = '" +
                             _mail.getText() + "')),(select id from persons where mail = '" + _mail.getText() + "')");
-                    //System.out.println(v);
+
+
+                    // udalo sie zalogowac
                     if(v.elementAt(0).elementAt(0) != null && ((Boolean)v.elementAt(0).elementAt(0))) {
 
-                        User.person_id = (Long) v.elementAt(0).elementAt(1);
+                        // ustawienia konta
+                        User.person_id = (long) v.elementAt(0).elementAt(1);
 
-                        v = Utility.getDataWithException("select fname,sname,lname,address,mail,(select name from statuses where id=status_id),phone from persons where id=" + User.person_id);
+                        v = Utility.getDataWithException("select fname,sname,lname,address,mail," +
+                                "(select name from statuses where id=status_id),phone,student_book,staff_code,academic_title,room,post," +
+                                "(select name from cathedrals where id=cathedral_id) " +
+                                "from persons full join student_books on student_books.person_id = id full join staff_details on staff_details.person_id=id where id=" + User.person_id);
                         User.fName = (String) v.elementAt(0).elementAt(0);
                         User.sName = (String) v.elementAt(0).elementAt(1);
                         User.lName = (String) v.elementAt(0).elementAt(2);
@@ -45,6 +51,19 @@ public class LoginPage {
                         User.mail = (String) v.elementAt(0).elementAt(4);
                         User.status = (String) v.elementAt(0).elementAt(5);
                         User.phone = (String) v.elementAt(0).elementAt(6);
+
+                        // student
+                        User.studentBook = String.valueOf(v.elementAt(0).elementAt(7));
+
+                        // staff
+                        User.staffCode = (String) v.elementAt(0).elementAt(8);
+                        User.room = String.valueOf((Integer) v.elementAt(0).elementAt(9));
+                        User.post = (String) v.elementAt(0).elementAt(10);
+                        User.academicTitle = (v.elementAt(0).elementAt(11) == null ? "" : v.elementAt(0).elementAt(11) + " ");
+                        User.cathedral = (String) v.elementAt(0).elementAt(12);
+
+
+                        // photo
                         User.photo = Utility.getPhoto(User.person_id);
                         if(User.photo != null) {
                             User.photo = User.photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
@@ -52,13 +71,12 @@ public class LoginPage {
 
 
                         Window.mainFrame.setContentPane(new MainPanel().getRoot());
-                        Window.mainFrame.setTitle("USOS - Main Page");
-                        Window.mainFrame.repaint();
+                        Window.mainFrame.setTitle("USOS");
                         Window.mainFrame.setVisible(true);
                     }
                 } catch(SQLException exc) {
                     //System.out.println(v);
-                    exc.printStackTrace();
+                    //exc.printStackTrace();
                     _mail.setText("");
                     _passwd.setText("");
                 }
