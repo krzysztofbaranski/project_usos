@@ -24,6 +24,7 @@ public class GroupDetails {
     private JTable prowadzacy;
     private JScrollPane scrollUczestnicy;
     private JTable uczestnicy;
+    private JScrollPane scroll2;
     Vector<Vector<Object>> vGeneral;
     Vector<Vector<Object>> vMarks;
     Vector<Vector<Object>> vClasses;
@@ -102,8 +103,15 @@ public class GroupDetails {
        vTeachers= Utility.getData(Learning.getGroupTeachersSQL(groupId));
        TableModel teachersModel = new AbstractTableModel() {
 
+           private final Object[] columnNames = {"prowadzący", "tytuł naukowy"};
+
+           public String getColumnName(int column) {
+               return columnNames[column].toString();
+           }
+
+
            public int getColumnCount() {
-               return 1;
+               return 2;
            }
 
            public int getRowCount() {
@@ -111,7 +119,8 @@ public class GroupDetails {
            }
 
            public Object getValueAt(int row, int col) {
-               return vTeachers.get(row).get(1) + " " + vTeachers.get(row).get(2);
+               if(col == 0) return vTeachers.get(row).get(1) + " " + vTeachers.get(row).get(2);
+               return vTeachers.get(row).get(3);
            }
        };
 
@@ -133,38 +142,46 @@ public class GroupDetails {
 
 /****************************** uczestnicy ********************************************************/
 
-       vStudents= Utility.getData(Learning.getGroupStudentsSQL(groupId, true));
-       TableModel studentsModel = new AbstractTableModel() {
+       if(Learning.groupDetailsPermissionTeacher(groupId) || Learning.groupDetailsPermissionStudent(groupId)) {
+           vStudents= Utility.getData(Learning.getGroupStudentsSQL(groupId, true));
+           TableModel studentsModel = new AbstractTableModel() {
+               private final Object[] columnNames = {"student", "kierunek"};
 
-           public int getColumnCount() {
-               return 2;
-           }
-
-           public int getRowCount() {
-               return vStudents.size();
-           }
-
-           public Object getValueAt(int row, int col) {
-               if(col==0) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
-               return vStudents.get(row).get(3);
-           }
-       };
-
-       uczestnicy.setModel(studentsModel);
-       uczestnicy.addMouseListener(new MouseAdapter() {
-           @Override
-           public void mouseClicked(MouseEvent e) {
-               int row = oceny.rowAtPoint(new Point(e.getX(), e.getY()));
-               int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
-               if (row == -1) return;
-               if (col == 0) {
-                   app.Window.mainFrame.setContentPane(new StudentDetails((long) vStudents.get(row).get(0)).getRoot());
-                   app.Window.mainFrame.setVisible(true);
-                   //TODO
+               public String getColumnName(int column) {
+                   return columnNames[column].toString();
                }
-           }
 
-       });
+
+               public int getColumnCount() {
+                   return 2;
+               }
+
+               public int getRowCount() {
+                   return vStudents.size();
+               }
+
+               public Object getValueAt(int row, int col) {
+                   if(col==0) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
+                   return vStudents.get(row).get(3);
+               }
+           };
+
+           uczestnicy.setModel(studentsModel);
+           uczestnicy.addMouseListener(new MouseAdapter() {
+               @Override
+               public void mouseClicked(MouseEvent e) {
+                   int row = oceny.rowAtPoint(new Point(e.getX(), e.getY()));
+                   int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
+                   if (row == -1) return;
+                   if (col == 0) {
+                       app.Window.mainFrame.setContentPane(new StudentDetails((long) vStudents.get(row).get(0)).getRoot());
+                       app.Window.mainFrame.setVisible(true);
+                       //TODO
+                   }
+               }
+
+           });
+       }
 
 
    }
