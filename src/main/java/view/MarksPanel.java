@@ -129,5 +129,4 @@ public class MarksPanel {
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
-
 }

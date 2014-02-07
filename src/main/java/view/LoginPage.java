@@ -35,7 +35,7 @@ public class LoginPage {
 
 
                     // udalo sie zalogowac
-                    if(v.elementAt(0).elementAt(0) != null && ((Boolean)v.elementAt(0).elementAt(0))) {
+                    if(v.elementAt(0).elementAt(0) != null && ((Boolean) v.elementAt(0).elementAt(0))) {
 
                         // ustawienia konta
                         User.person_id = (long) v.elementAt(0).elementAt(1);
@@ -65,7 +65,7 @@ public class LoginPage {
 
                         // photo
                         User.photo = Utility.getPhoto(User.person_id);
-                        if (User.photo != null) {
+                        if(User.photo != null) {
                             User.photo = User.photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
                         }
 
@@ -74,7 +74,7 @@ public class LoginPage {
                         Window.mainFrame.setTitle("USOS");
                         Window.mainFrame.setVisible(true);
                     }
-                } catch (SQLException exc) {
+                } catch(SQLException exc) {
                     //System.out.println(v);
                     //exc.printStackTrace();
                     _mail.setText("");
