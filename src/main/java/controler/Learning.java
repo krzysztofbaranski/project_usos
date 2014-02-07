@@ -91,8 +91,7 @@ public class Learning {
         boolean allCourses = (groupId == -1);
         boolean allStudents = (studentId == -1);
         String res =  "select " +
-                (allStudents ? "marks.student_id, STU.fname, STU.lname,": "") +
-                "staff_id, TEA.fname, TEA.lname, " +
+                (allStudents ? "marks.student_id, STU.fname, STU.lname,": " staff_id, TEA.fname, TEA.lname, ") +
                 (allCourses ? "group_id, groups.name," : "") +
                 "mark, description, notice, date " +
                 (!onlyFinal ? ", is_final_mark ": "") +

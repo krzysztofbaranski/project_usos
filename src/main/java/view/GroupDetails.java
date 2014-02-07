@@ -54,12 +54,12 @@ public class GroupDetails {
 
 
         /**** oceny ****/
-        vMarks = Utility.getData(Learning.getMarks(groupId, User.person_id, false));
+        vMarks = Utility.getData(Learning.getMarks(groupId, (User.staffCode != null ? -1 : User.person_id), false));
 
 
         TableModel marksModel = new AbstractTableModel() {
 
-            private final Object[] columnNames = {"prowadzący",
+            private final Object[] columnNames = {(User.staffCode != null ? "student" : "prowadzący"),
                     "ocena", "opis", "uwagi", "data"};
 
             public String getColumnName(int column) {
@@ -175,5 +175,4 @@ public class GroupDetails {
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
-
 }

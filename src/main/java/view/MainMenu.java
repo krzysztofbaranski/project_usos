@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+ 
 /**
  * Created by krzysztof on 05/02/14.
  */
@@ -16,8 +16,6 @@ class MainMenu {
     private JButton _main;
     private JButton _search;
     private JButton _account;
-    private JButton _courses;
-    private JButton _settings;
     private JButton _logout;
     private JPanel menu;
     private JButton _marks;

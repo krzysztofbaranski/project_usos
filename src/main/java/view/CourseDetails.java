@@ -37,7 +37,7 @@ public class CourseDetails {
         final boolean onlyCurrent = false;
 
             vGroups = Utility.getData(Learning.getCourseGroups(courseId, Settings.academic_year, Settings.semester));
-       
+
         TableModel model = new AbstractTableModel() {
 
             private final Object[] columnNames = {"grupa", "typ", "rok", "semestr"};
