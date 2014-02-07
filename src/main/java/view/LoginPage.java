@@ -57,11 +57,11 @@ public class LoginPage {
 
                         // staff
                         User.staffCode = (String) v.elementAt(0).elementAt(8);
-                        /*User.room = String.valueOf((Integer) v.elementAt(0).elementAt(9));
-                        User.post = (String) v.elementAt(0).elementAt(10);
-                        User.academicTitle = (v.elementAt(0).elementAt(11) == null ? "" : v.elementAt(0).elementAt(11) + " ");
+                        User.room = v.elementAt(0).elementAt(10) + "";
+                        User.post = (String) v.elementAt(0).elementAt(11);
+                        User.academicTitle = (v.elementAt(0).elementAt(9) == null ? "" : v.elementAt(0).elementAt(9) + " ");
                         User.cathedral = (String) v.elementAt(0).elementAt(12);
-*/
+
 
                         // photo
                         User.photo = Utility.getPhoto(User.person_id);
@@ -73,6 +73,9 @@ public class LoginPage {
                         Window.mainFrame.setContentPane(new MainPanel().getRoot());
                         Window.mainFrame.setTitle("USOS");
                         Window.mainFrame.setVisible(true);
+                    } else {
+                        _mail.setText("");
+                        _passwd.setText("");
                     }
                 } catch(SQLException exc) {
                     //System.out.println(v);

@@ -62,7 +62,7 @@ public class Persons {
                 .append(")");
 
         try {
-            System.out.println(insert);
+            //System.out.println(insert);
             Utility.updateData(insert.toString());
         } catch (SQLException e) {
             throw e.getNextException();
@@ -190,8 +190,9 @@ public class Persons {
             if(i < changes.length - 2) update.append(",");
         }
 
-        update.append(" WHERE staff_code=").append(staffCode);
+        update.append(" WHERE staff_code=").append("'").append(staffCode).append("'");
         try {
+            //System.out.println(update);
             Utility.updateData(update.toString());
         } catch (SQLException e) {
             throw e.getNextException();
@@ -220,7 +221,7 @@ public class Persons {
         }
 
         app.User.studentsBranchesIdsAsSQLSet = sb.toString();
-        System.out.println(sb);
+        //System.out.println(sb);
     }
 
     /**

@@ -79,7 +79,7 @@ public class AddPerson {
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        e1.printStackTrace();
+                        //e1.printStackTrace();
                     }
                 } else if(_status.getText().equals("teacher")) {
                     try {
@@ -87,7 +87,7 @@ public class AddPerson {
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        e1.printStackTrace();
+                        //e1.printStackTrace();
                     }
                 } else {
                     try {
@@ -95,7 +95,7 @@ public class AddPerson {
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        e1.printStackTrace();
+                        //e1.printStackTrace();
                     }
                 }
 
@@ -200,26 +200,26 @@ public class AddPerson {
                     try {
                         StringBuilder update = new StringBuilder("update persons set ");
                         update.append("fName = ").append(fName).append(", sName = ").append(sName).append(", lName = ").append(lName).append("  ,pesel = ").append(pesel).append(" ,date_of_birth = ").append(dateOfBirth).append(" ,place_of_birth = ").append(placeOfBirth).append(" ,address = ").append(address).append(",phone = ").append(phone).append(" ,mail = ").append(__mail).append(" where mail = '").append(mail).append("'");
-                        System.out.println(update);
-                        Utility.updateData(update.toString());
-
-                    } catch(Exception e1) {
-                        ok = false;
-                        JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        e1.printStackTrace();
-                    }
-                } else {
-                    try {
-                        StringBuilder update = new StringBuilder("update staff set ");
-                        update.append("first_name = ").append(fName).append(", second_name = ").append(sName).append(", last_name = ").append(lName).append("  ,pesel = ").append(pesel).append(" ,date_of_birth = ").append(dateOfBirth).append(" ,place_of_birth = ").append(placeOfBirth).append(" ,address = ").append(address).append(",phone = ").append(phone).append(" ,mail = ").append(__mail).append(",room = ").append(room).append(",post = ").append(post).append(",academic_title = ").append(acadTitle)
-                                .append(" where mail = '").append(mail).append("'");
                         //System.out.println(update);
                         Utility.updateData(update.toString());
 
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        e1.printStackTrace();
+                        //e1.printStackTrace();
+                    }
+                } else {
+                    try {
+                        StringBuilder update = new StringBuilder("update staff set ");
+                        update.append("first_name = ").append(fName).append(", second_name = ").append(sName).append(", last_name = ").append(lName).append("  ,pesel = ").append(pesel).append(" ,date_of_birth = ").append(dateOfBirth).append(" ,place_of_birth = ").append(placeOfBirth).append(" ,address = ").append(address).append(",phone = ").append(phone).append(" ,mail = ").append(__mail).append(",room = ").append(room).append(",post = ").append(post).append(",academic_title = ").append(acadTitle)
+                                .append(" where mail = '").append(mail).append("'");
+                        //System.out.println("Update teacher: " + update);
+                        Utility.updateData(update.toString());
+
+                    } catch(Exception e1) {
+                        ok = false;
+                        JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
+                        //e1.printStackTrace();
                     }
                 }
 

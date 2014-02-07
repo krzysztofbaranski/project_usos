@@ -116,141 +116,144 @@ class AccountPanel {
             }
         });
 
-        /**
-         *
-         *
-         * Przyciski do zmiany
-         *
-         *
-         */
-        ActionListener listener = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //System.out.println(((JButton)e.getSource()).getName());
-                String button = ((JButton) e.getSource()).getName();
-                if(button.equals("address")) {                                              // address
-                    if(!_address.isEditable()) {
-                        _address.setEditable(true);
-                        _changeAddress.setText("OK");
-                    } else {
-                        String newAddress = _address.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "address", newAddress);
-                        } catch(SQLException e1) {
-                            _address.setText(User.address);
-                            _address.setEditable(false);
-                            _changeAddress.setText("...");
-                        }
-                        User.address = newAddress;
-                        _address.setText(User.address);
-                        _address.setEditable(false);
-                        _changeAddress.setText("...");
-                    }
-                } else if(button.equals("mail")) {                                          // mail
-                    if(!_mail.isEditable()) {
-                        _mail.setEditable(true);
-                        _changeMail.setText("OK");
-                    } else {
-                        String newMail = _mail.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "mail", newMail);
-                        } catch(SQLException e1) {
-                            _mail.setText(User.mail);
-                            _mail.setEditable(false);
-                            _changeMail.setText("...");
-                        }
-                        User.mail = newMail;
-                        _mail.setText(User.mail);
-                        _mail.setEditable(false);
-                        _changeMail.setText("...");
-                    }
-                } else if(button.equals("phone")) {                                         // phone
-                    if(!_phone.isEditable()) {
-                        _phone.setEditable(true);
-                        _changePhone.setText("OK");
-                    } else {
-                        String newPhone = _phone.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "phone", newPhone);
-                        } catch(SQLException e1) {
-                            _phone.setText(User.phone);
-                            _phone.setEditable(false);
-                            _changePhone.setText("...");
-                        }
-                        User.phone = newPhone;
-                        _phone.setText(User.phone);
-                        _phone.setEditable(false);
-                        _changePhone.setText("...");
-                    }
-                } else if(button.equals("room")) {                                         // room
-                    if(!_phone.isEditable()) {
-                        _phone.setEditable(true);
-                        _changePhone.setText("OK");
-                    } else {
-                        String newPhone = _phone.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "phone", newPhone);
-                        } catch(SQLException e1) {
-                            _phone.setText(User.phone);
-                            _phone.setEditable(false);
-                            _changePhone.setText("...");
-                        }
-                        User.phone = newPhone;
-                        _phone.setText(User.phone);
-                        _phone.setEditable(false);
-                        _changePhone.setText("...");
-                    }
-                } else if(button.equals("cath")) {                                          // cathedra
-                    if(!_phone.isEditable()) {
-                        _phone.setEditable(true);
-                        _changePhone.setText("OK");
-                    } else {
-                        String newPhone = _phone.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "phone", newPhone);
-                        } catch(SQLException e1) {
-                            _phone.setText(User.phone);
-                            _phone.setEditable(false);
-                            _changePhone.setText("...");
-                        }
-                        User.phone = newPhone;
-                        _phone.setText(User.phone);
-                        _phone.setEditable(false);
-                        _changePhone.setText("...");
-                    }
-                } else if(button.equals("post")) {                                          // post
-                    if(!_phone.isEditable()) {
-                        _phone.setEditable(true);
-                        _changePhone.setText("OK");
-                    } else {
-                        String newPhone = _phone.getText();
-                        try {
-                            Persons.changePerson(User.person_id, "phone", newPhone);
-                        } catch(SQLException e1) {
-                            _phone.setText(User.phone);
-                            _phone.setEditable(false);
-                            _changePhone.setText("...");
-                        }
-                        User.phone = newPhone;
-                        _phone.setText(User.phone);
-                        _phone.setEditable(false);
-                        _changePhone.setText("...");
-                    }
-                }
-            }
-        };
 
-        _changeAddress.addActionListener(listener);
-        _changeMail.addActionListener(listener);
-        _changePhone.addActionListener(listener);
-        _changeRoom.addActionListener(listener);
-        _changeCath.addActionListener(listener);
-        _changePost.addActionListener(listener);
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Window.mainFrame.setContentPane(new AddPerson(_mail.getText()).getRoot());
                 Window.mainFrame.setVisible(true);
+            }
+        });
+        _changeAddress.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_address.isEditable()) {
+                    _address.setEditable(true);
+                    _changeAddress.setText("OK");
+                } else {
+                    String newAddress = _address.getText();
+                    try {
+                        Persons.changePerson(User.person_id, "address", newAddress);
+                    } catch(SQLException e1) {
+                        _address.setText(User.address);
+                        _address.setEditable(false);
+                        _changeAddress.setText("...");
+                    }
+                    User.address = newAddress;
+                    _address.setText(User.address);
+                    _address.setEditable(false);
+                    _changeAddress.setText("...");
+                }
+            }
+        });
+        _changeMail.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_mail.isEditable()) {
+                    _mail.setEditable(true);
+                    _changeMail.setText("OK");
+                } else {
+                    String newMail = _mail.getText();
+                    try {
+                        Persons.changePerson(User.person_id, "mail", newMail);
+                    } catch(SQLException e1) {
+                        _mail.setText(User.mail);
+                        _mail.setEditable(false);
+                        _changeMail.setText("...");
+                    }
+                    User.mail = newMail;
+                    _mail.setText(User.mail);
+                    _mail.setEditable(false);
+                    _changeMail.setText("...");
+                }
+            }
+        });
+        _changePhone.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_phone.isEditable()) {
+                    _phone.setEditable(true);
+                    _changePhone.setText("OK");
+                } else {
+                    String newPhone = _phone.getText();
+                    try {
+                        Persons.changePerson(User.person_id, "phone", newPhone);
+                    } catch(SQLException e1) {
+                        _phone.setText(User.phone);
+                        _phone.setEditable(false);
+                        _changePhone.setText("...");
+                    }
+                    User.phone = newPhone;
+                    _phone.setText(User.phone);
+                    _phone.setEditable(false);
+                    _changePhone.setText("...");
+                }
+            }
+        });
+        _changeRoom.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_room.isEditable()) {
+                    _room.setEditable(true);
+                    _changeRoom.setText("OK");
+                } else {
+                    String newRoom = _room.getText();
+                    try {
+                        Persons.changeStaff(User.staffCode, "room", newRoom);
+                    } catch(SQLException e1) {
+                        _room.setText(User.room);
+                        _room.setEditable(false);
+                        _changeRoom.setText("...");
+                    }
+                    User.room = newRoom;
+                    _phone.setText(User.phone);
+                    _phone.setEditable(false);
+                    _changePhone.setText("...");
+                }
+            }
+        });
+        _changeCath.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_cath.isEditable()) {
+                    _cath.setEditable(true);
+                    _changeCath.setText("OK");
+                } else {
+                    String newCath = _cath.getText();
+                    try {
+                        Persons.changeStaff(User.staffCode, "cathedral_id", "(select id from cathedrals where name = '" + newCath +"')");
+                    } catch(SQLException e1) {
+                        _cath.setText(User.cathedral);
+                        _cath.setEditable(false);
+                        _changeCath.setText("...");
+                    }
+                    User.cathedral = newCath;
+                    _cath.setText(User.phone);
+                    _cath.setEditable(false);
+                    _changeCath.setText("...");
+                }
+            }
+        });
+        _changePost.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_post.isEditable()) {
+                    _post.setEditable(true);
+                    _changePost.setText("OK");
+                } else {
+                    String newPost = _post.getText();
+                    try {
+                        Persons.changeStaff(User.staffCode, "post", newPost);
+                    } catch(SQLException e1) {
+                        _phone.setText(User.post);
+                        _phone.setEditable(false);
+                        _changePost.setText("...");
+                    }
+                    User.post = newPost;
+                    _post.setText(User.phone);
+                    _post.setEditable(false);
+                    _changePost.setText("...");
+                }
             }
         });
     }
@@ -305,123 +308,153 @@ class AccountPanel {
          *
          *
          */
-        ActionListener listener = new ActionListener() {
+        _changeAddress.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //System.out.println(((JButton)e.getSource()).getName());
-                String button = ((JButton) e.getSource()).getName();
-                if(button.equals("address")) {                                              // address
-                    if(!_address.isEditable()) {
-                        _address.setEditable(true);
-                        _changeAddress.setText("OK");
-                    } else {
-                        String newAddress = _address.getText();
-                        try {
-                            Persons.changePerson(id, "address", newAddress);
-                        } catch(SQLException e1) {
-                            _address.setText((String) v.elementAt(0).elementAt(4));
-                            _address.setEditable(false);
-                            _changeAddress.setText("...");
-                        }
-                        _address.setText(newAddress);
+                if(!_address.isEditable()) {
+                    _address.setEditable(true);
+                    _changeAddress.setText("OK");
+                } else {
+                    String newAddress = _address.getText();
+                    try {
+                        Persons.changePerson(id, "address", newAddress);
+                    } catch(SQLException e1) {
+                        _address.setText((String) v.elementAt(0).elementAt(4));
                         _address.setEditable(false);
                         _changeAddress.setText("...");
                     }
-                } else if(button.equals("mail")) {                                          // mail
-                    if(!_mail.isEditable()) {
-                        _mail.setEditable(true);
-                        _changeMail.setText("OK");
-                    } else {
-                        String newMail = _mail.getText();
-                        try {
-                            Persons.changePerson(id, "mail", newMail);
-                        } catch(SQLException e1) {
-                            _mail.setText((String) v.elementAt(0).elementAt(5));
-                            _mail.setEditable(false);
-                            _changeMail.setText("...");
-                        }
-                        _mail.setText(newMail);
+                    _address.setText(newAddress);
+                    _address.setEditable(false);
+                    _changeAddress.setText("...");
+                }
+            }
+        });
+        _changeMail.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_mail.isEditable()) {
+                    _mail.setEditable(true);
+                    _changeMail.setText("OK");
+                } else {
+                    String newMail = _mail.getText();
+                    try {
+                        Persons.changePerson(id, "mail", newMail);
+                    } catch(SQLException e1) {
+                        _mail.setText((String) v.elementAt(0).elementAt(5));
                         _mail.setEditable(false);
                         _changeMail.setText("...");
                     }
-                } else if(button.equals("phone")) {                                         // phone
-                    if(!_phone.isEditable()) {
-                        _phone.setEditable(true);
-                        _changePhone.setText("OK");
-                    } else {
-                        String newPhone = _phone.getText();
-                        try {
-                            Persons.changePerson(id, "phone", newPhone);
-                        } catch(SQLException e1) {
-                            _phone.setText((String) v.elementAt(0).elementAt(6));
-                            _phone.setEditable(false);
-                            _changePhone.setText("...");
-                        }
-                        _phone.setText(newPhone);
+                    _mail.setText(newMail);
+                    _mail.setEditable(false);
+                    _changeMail.setText("...");
+                }
+            }
+        });
+        _changePhone.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_phone.isEditable()) {
+                    _phone.setEditable(true);
+                    _changePhone.setText("OK");
+                } else {
+                    String newPhone = _phone.getText();
+                    try {
+                        Persons.changePerson(id, "phone", newPhone);
+                    } catch(SQLException e1) {
+                        _phone.setText((String) v.elementAt(0).elementAt(6));
                         _phone.setEditable(false);
                         _changePhone.setText("...");
                     }
-                } else if(button.equals("room")) {                                         // room
-                    if(!_room.isEditable()) {
-                        _room.setEditable(true);
-                        _changeRoom.setText("OK");
-                    } else {
-                        int newRoom = Integer.parseInt(_room.getText());
-                        try {
-                            Persons.changeStaff(_staffCode.getText(), "room", newRoom);
-                        } catch(SQLException e1) {
-                            _room.setText((String) v.elementAt(0).elementAt(6));
-                            _room.setEditable(false);
-                            _changeRoom.setText("...");
-                        }
-                        _room.setText(String.valueOf(newRoom));
+                    _phone.setText(newPhone);
+                    _phone.setEditable(false);
+                    _changePhone.setText("...");
+                }
+            }
+        });
+        _changeRoom.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_room.isEditable()) {
+                    _room.setEditable(true);
+                    _changeRoom.setText("OK");
+                } else {
+                    int newRoom = Integer.parseInt(_room.getText());
+                    try {
+                        Persons.changeStaff(_staffCode.getText(), "room", newRoom);
+                    } catch(SQLException e1) {
+                        _room.setText((String) v.elementAt(0).elementAt(6));
                         _room.setEditable(false);
                         _changeRoom.setText("...");
                     }
-                } else if(button.equals("cath")) {                                          // cathedra
-                    if(!_cath.isEditable()) {
-                        _cath.setEditable(true);
-                        _changeCath.setText("OK");
-                    } else {
-                        String newValue = _cath.getText();
-                        try {
-                            Persons.changeStaff(_staffCode.getText(), "cathedral", newValue);
-                        } catch(SQLException e1) {
-                            _cath.setText((String) v.elementAt(0).elementAt(12));
-                            _cath.setEditable(false);
-                            _changeCath.setText("...");
-                        }
-                        _cath.setText(String.valueOf(newValue));
+                    _room.setText(String.valueOf(newRoom));
+                    _room.setEditable(false);
+                    _changeRoom.setText("...");
+                }
+            }
+        });
+        _changeCath.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_cath.isEditable()) {
+                    _cath.setEditable(true);
+                    _changeCath.setText("OK");
+                } else {
+                    String newValue = _cath.getText();
+                    try {
+                        Persons.changeStaff(_staffCode.getText(), "cathedral_id", "(select id from cathedrals where name = '" + newValue +"')");
+                    } catch(SQLException e1) {
+                        _cath.setText((String) v.elementAt(0).elementAt(12));
                         _cath.setEditable(false);
                         _changeCath.setText("...");
                     }
-                } else if(button.equals("post")) {                                          // post
-                    if(!_post.isEditable()) {
-                        _post.setEditable(true);
-                        _changePost.setText("OK");
-                    } else {
-                        String newValue = _post.getText();
-                        try {
-                            Persons.changeStaff(_staffCode.getText(), "post", newValue);
-                        } catch(SQLException e1) {
-                            _post.setText((String) v.elementAt(0).elementAt(10));
-                            _post.setEditable(false);
-                            _changePost.setText("...");
-                        }
-                        _post.setText(String.valueOf(newValue));
+                    _cath.setText(String.valueOf(newValue));
+                    _cath.setEditable(false);
+                    _changeCath.setText("...");
+                }
+            }
+        });
+        _changePost.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(!_post.isEditable()) {
+                    _post.setEditable(true);
+                    _changePost.setText("OK");
+                } else {
+                    String newValue = _post.getText();
+                    try {
+                        Persons.changeStaff(_staffCode.getText(), "post", newValue);
+                    } catch(SQLException e1) {
+                        _post.setText((String) v.elementAt(0).elementAt(10));
                         _post.setEditable(false);
                         _changePost.setText("...");
                     }
+                    _post.setText(String.valueOf(newValue));
+                    _post.setEditable(false);
+                    _changePost.setText("...");
                 }
             }
-        };
+        });
 
-        _changeAddress.addActionListener(listener);
-        _changeMail.addActionListener(listener);
-        _changePhone.addActionListener(listener);
-        _changeRoom.addActionListener(listener);
-        _changeCath.addActionListener(listener);
-        _changePost.addActionListener(listener);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         addPhoto.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

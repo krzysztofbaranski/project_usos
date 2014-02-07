@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="usos:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="49f88057-4af1-4dae-82a0-68a5f9d22882" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/app/Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usos.iml" afterPath="$PROJECT_DIR$/usos.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controler/Persons.java" afterPath="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="usos.iws" />
@@ -70,10 +75,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="LoginPage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="0" selection-start="3677" selection-end="3677" vertical-scroll-proportion="1.2142857" vertical-offset="846" max-vertical-offset="1482">
+            <state line="81" column="30" selection-start="3721" selection-end="3725" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="1300">
               <folding />
             </state>
           </provider>
@@ -82,25 +87,16 @@
       <file leaf-file-name="AddPerson.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="43" selection-start="11070" selection-end="11070" vertical-scroll-proportion="0.0" vertical-offset="2834" max-vertical-offset="3146">
+            <state line="81" column="26" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="3146">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
+      <file leaf-file-name="Persons.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="18" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.0" vertical-offset="1144" max-vertical-offset="3276">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="22" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="2392">
+            <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.033163264" vertical-offset="286" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -113,28 +109,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="127" column="0" selection-start="3804" selection-end="3804" vertical-scroll-proportion="0.0" vertical-offset="1651" max-vertical-offset="3276">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AccountPanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="465" column="136" selection-start="21355" selection-end="21355" vertical-scroll-proportion="0.0" vertical-offset="6045" max-vertical-offset="6331">
+            <state line="382" column="0" selection-start="15701" selection-end="15701" vertical-scroll-proportion="0.0" vertical-offset="4836" max-vertical-offset="6760">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="247">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPerson.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -152,6 +141,7 @@
         <option value="Krzysztof BaranskiStr" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -172,18 +162,18 @@
         <option value="$PROJECT_DIR$/src/main/java/controler/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/app/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
-        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Settings.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
       </list>
     </option>
   </component>
@@ -210,7 +200,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -226,7 +216,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,74 +288,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,13 +305,20 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../usos_eclipse" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="usos" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -627,23 +558,23 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255086" sideWeight="0.501904" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4996192" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3233909" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32081378" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.4996192" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32496077" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32496077" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24904798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -670,7 +601,11 @@
     <MESSAGE value="Dodawanie ludzi" />
     <MESSAGE value="Merge branch 'master' of https://github.com/krzysztofbaranski/project_usos&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/view/AccountPanel.java&#10;&#9;src/main/java/view/CourseDetails.java&#10;&#9;src/main/java/view/GroupDetails.java&#10;&#9;src/main/java/view/LoginPage.java&#10;&#9;src/main/java/view/MarksPanel.java&#10;&#9;src/main/java/view/SearchPanel.java&#10;&#9;src/main/java/view/SearchResultPanel.java&#10;" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/view/AccountPanel.java&#10;&#9;src/main/java/view/CourseDetails.java&#10;&#9;src/main/java/view/GroupDetails.java&#10;&#9;src/main/java/view/LoginPage.java&#10;&#9;src/main/java/view/MarksPanel.java&#10;&#9;src/main/java/view/SearchPanel.java&#10;&#9;src/main/java/view/SearchResultPanel.java&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/view/AccountPanel.java&#10;&#9;src/main/java/view/CourseDetails.java&#10;&#9;src/main/java/view/GroupDetails.java&#10;&#9;src/main/java/view/LoginPage.java&#10;&#9;src/main/java/view/MarksPanel.java&#10;&#9;src/main/java/view/SearchPanel.java&#10;&#9;src/main/java/view/SearchResultPanel.java&#10;" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/krzysztofbaranski/project_usos&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
+    <MESSAGE value="Poprawione account" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/view/AccountPanel.java&#10;&#9;src/main/java/view/CourseDetails.java&#10;&#9;src/main/java/view/GroupDetails.java&#10;&#9;src/main/java/view/LoginPage.java&#10;&#9;src/main/java/view/MarksPanel.java&#10;&#9;src/main/java/view/SearchPanel.java&#10;&#9;src/main/java/view/SearchResultPanel.java&#10;&#10;" />
+    <MESSAGE value="poprawione account" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawione account" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -747,12 +682,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1040">
-          <folding>
-            <element signature="e#1292#1545#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#2453#2705#0" expanded="true" />
-            <element signature="e#2694#2695#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="325">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -911,7 +841,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="35" selection-start="393" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="533">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,12 +869,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="49" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="1014">
-          <folding>
-            <element signature="e#1292#1545#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#2453#2705#0" expanded="true" />
-            <element signature="e#2694#2695#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,56 +878,9 @@
         <state line="482" column="0" selection-start="17756" selection-end="17756" vertical-scroll-proportion="0.0" vertical-offset="5833" max-vertical-offset="15366" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1380" selection-end="3003" vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1066">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0" vertical-offset="2911" max-vertical-offset="3302">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="3677" selection-end="3677" vertical-scroll-proportion="1.2142857" vertical-offset="846" max-vertical-offset="1482">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="43" selection-start="11070" selection-end="11070" vertical-scroll-proportion="0.0" vertical-offset="2324" max-vertical-offset="2925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="18" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.0" vertical-offset="872" max-vertical-offset="3133">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="22" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="2028">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="465" column="136" selection-start="21355" selection-end="21355" vertical-scroll-proportion="0.0" vertical-offset="5316" max-vertical-offset="5889">
+        <state line="92" column="22" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="2379">
           <folding />
         </state>
       </provider>
@@ -1019,16 +897,65 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="29" selection-start="2952" selection-end="2952" vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="3804" selection-end="3804" vertical-scroll-proportion="0.0" vertical-offset="1378" max-vertical-offset="3133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="382" column="0" selection-start="15701" selection-end="15701" vertical-scroll-proportion="0.0" vertical-offset="4836" max-vertical-offset="6760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="30" selection-start="3721" selection-end="3725" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="1300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="26" selection-start="3544" selection-end="3544" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="3146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.033163264" vertical-offset="286" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>usos:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1096,6 +1023,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
