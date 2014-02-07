@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 /**
- * Created by krzysztof on 06/02/14.
+ * Created by krzysztof  on 06/02/14.
  *
  */
 class AccountPanel {
