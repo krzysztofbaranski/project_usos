@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f88057-4af1-4dae-82a0-68a5f9d22882" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/CourseDetails.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/MarksPanel.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/StudentDetails.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/StudentDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controler/Learning.java" afterPath="$PROJECT_DIR$/src/main/java/controler/Learning.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.form" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/Settings.java" afterPath="$PROJECT_DIR$/src/main/java/app/Settings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/User.java" afterPath="$PROJECT_DIR$/src/main/java/app/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usos.iml" afterPath="$PROJECT_DIR$/usos.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="usos.iws" />
@@ -88,12 +67,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginPage.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LoginPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.6982097" vertical-offset="429" max-vertical-offset="1053">
+            <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1248">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupDetails.form" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -107,19 +93,8 @@
       <file leaf-file-name="AccountPanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="5967">
-              <folding>
-                <element signature="e#2554#3581#0" expanded="true" />
-                <element signature="e#3570#3571#0" expanded="true" />
-                <element signature="e#3622#4272#0" expanded="true" />
-                <element signature="e#4261#4262#0" expanded="true" />
-                <element signature="e#12997#18712#0" expanded="true" />
-                <element signature="e#18701#18702#0" expanded="true" />
-                <element signature="e#19048#19838#0" expanded="true" />
-                <element signature="e#19827#19828#0" expanded="true" />
-                <element signature="e#19879#20486#0" expanded="true" />
-                <element signature="e#20475#20476#0" expanded="true" />
-              </folding>
+            <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
       </list>
     </option>
   </component>
@@ -205,8 +181,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -481,7 +455,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" />
+              <option name="myItemId" value="GroupDetails" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,6 +527,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -804,24 +780,24 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265306" sideWeight="0.501904" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255086" sideWeight="0.501904" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4996192" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265306" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.4996192" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32394367" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4996192" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45839873" sideWeight="0.4996192" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -850,6 +826,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1053">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="25" selection-start="2036" selection-end="2257" vertical-scroll-proportion="0.0" vertical-offset="637" max-vertical-offset="1014">
@@ -867,18 +874,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="40" selection-start="6441" selection-end="6441" vertical-scroll-proportion="0.0" vertical-offset="2145" max-vertical-offset="3744">
-          <folding>
-            <element signature="e#2554#3581#0" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3622#4272#0" expanded="true" />
-            <element signature="e#4261#4262#0" expanded="true" />
-            <element signature="e#12997#18712#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#19048#19838#0" expanded="true" />
-            <element signature="e#19827#19828#0" expanded="true" />
-            <element signature="e#19879#20486#0" expanded="true" />
-            <element signature="e#20475#20476#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1147,26 +1143,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="5967">
-          <folding>
-            <element signature="e#2554#3581#0" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3622#4272#0" expanded="true" />
-            <element signature="e#4261#4262#0" expanded="true" />
-            <element signature="e#12997#18712#0" expanded="true" />
-            <element signature="e#18701#18702#0" expanded="true" />
-            <element signature="e#19048#19838#0" expanded="true" />
-            <element signature="e#19827#19828#0" expanded="true" />
-            <element signature="e#19879#20486#0" expanded="true" />
-            <element signature="e#20475#20476#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.6982097" vertical-offset="429" max-vertical-offset="1053">
+        <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1053">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
   </component>
