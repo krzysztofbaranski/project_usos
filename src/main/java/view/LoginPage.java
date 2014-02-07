@@ -4,11 +4,12 @@ import app.*;
 import app.Window;
 import controler.Utility;
 
-import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Vector;
 
 /**
@@ -25,7 +26,7 @@ public class LoginPage {
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Vector<Vector<Object>> v = null;
+                Vector<Vector<Object>> v;
                 try {
                     v = Utility.getDataWithException("select decode(md5('" +
                             _passwd.getText() +
@@ -54,10 +55,8 @@ public class LoginPage {
                         Window.mainFrame.setTitle("USOS - Main Page");
                         Window.mainFrame.repaint();
                         Window.mainFrame.setVisible(true);
-                    } else {
-                        // permission denied
                     }
-                } catch(Throwable exc) {
+                } catch(SQLException exc) {
                     //System.out.println(v);
                     exc.printStackTrace();
                     _mail.setText("");

@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 /**
  * Created by krzysztof on 05/02/14.
  */
-public class MainMenu {
+class MainMenu {
     private JButton _main;
     private JButton _search;
     private JButton _account;

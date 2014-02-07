@@ -7,7 +7,7 @@ import java.util.Vector;
 /**
  * Created by krzysztof on 03/02/14.
  */
-public class Learning {
+class Learning {
 
     public static String getGroupSQL(int groupId) {
         return "SELECT groups.id, groups.name,"
@@ -90,7 +90,7 @@ public class Learning {
     public static String getMarks (int groupId, int studentId, boolean onlyFinal) {
         boolean allCourses = (groupId == -1);
         boolean allStudents = (studentId == -1);
-        String res =  "select " +
+        return "select " +
                 (allStudents ? "marks.student_id, STU.fname, STU.lname,": "") +
                 "staff_id, TEA.fname, TEA.lname, " +
                 (allCourses ? "group_id, groups.name," : "") +
@@ -105,7 +105,6 @@ public class Learning {
                 (!allStudents ? " and STU.id = " + studentId : "") +
                 (onlyFinal ? " and is_final_mark " : "") +
                 " order by date desc";
-        return res;
     }
 
     /**
