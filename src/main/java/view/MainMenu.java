@@ -18,6 +18,7 @@ class MainMenu {
     private JButton _settings;
     private JButton _logout;
     private JPanel menu;
+    private JButton _marks;
 
     public MainMenu() {
         // MAIN PANEL
@@ -38,6 +39,13 @@ class MainMenu {
             }
         });
 
+        _marks.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Window.mainFrame.setContentPane(new MarksPanel().getRoot());
+                Window.mainFrame.setVisible(true);
+            }
+        });
 
         _account.addActionListener(new ActionListener() {
             @Override
