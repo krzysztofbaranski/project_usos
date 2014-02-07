@@ -18,7 +18,7 @@ import java.util.Vector;
 /**
  * Created by krzysztof on 06/02/14.
  *
- */
+ */aaaaaaa
 class AccountPanel {
     private JPanel menu;
     private JLabel _name;

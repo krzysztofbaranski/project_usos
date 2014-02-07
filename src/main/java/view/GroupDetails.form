@@ -73,7 +73,7 @@
                 <properties>
                   <autoCreateRowSorter value="true"/>
                   <name value="Oceny"/>
-                  <preferredSize width="32" height="64"/>
+                  <preferredSize width="-1" height="-1"/>
                   <showHorizontalLines value="false"/>
                   <showVerticalLines value="false"/>
                 </properties>
