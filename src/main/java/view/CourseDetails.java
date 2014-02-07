@@ -37,13 +37,7 @@ public class CourseDetails {
         final boolean onlyCurrent = false;
 
             vGroups = Utility.getData(Learning.getCourseGroups(courseId, Settings.academic_year, Settings.semester));
-        System.out.println(Learning.getCourseGroups(courseId, -1, -1));
-        System.out.println(vGroups.size());
-        for (Vector<Object> vv : vGroups)
-            for (Object o : vv)
-                System.out.println(o);
-        System.out.println(User.post);
-
+       
         TableModel model = new AbstractTableModel() {
 
             private final Object[] columnNames = {"grupa", "typ", "rok", "semestr"};

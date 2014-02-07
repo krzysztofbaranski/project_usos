@@ -72,11 +72,6 @@ class AccountPanel {
         if(_status.equals("student")) {
             Vis(false,_staffCode,_post,_cath,_room,_changeCath,_changePost,_changeRoom,_cathLabel,_postLabel,_roomLabel,_staffCodeLabel);
             _studentBook.setText(User.studentBook);
-<<<<<<< HEAD
-            // teacher
-=======
-        // teacher
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
         } else if(_status.equals("teacher")) {
             Vis(false,_studentBook,_studentBookLabel);
             _room.setText(User.room);
@@ -244,7 +239,7 @@ class AccountPanel {
                         _changePhone.setText("...");
                     }
                 }
-            }
+
         };
 
         _changeAddress.addActionListener(listener);
@@ -313,11 +308,7 @@ class AccountPanel {
             public void actionPerformed(ActionEvent e) {
                 //System.out.println(((JButton)e.getSource()).getName());
                 String button = ((JButton)e.getSource()).getName();
-<<<<<<< HEAD
-                if(button.equals("address")) { // address
-=======
                 if(button.equals("address")) {                                              // address
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
                     if(!_address.isEditable()) {
                         _address.setEditable(true);
                         _changeAddress.setText("OK");
@@ -334,11 +325,7 @@ class AccountPanel {
                         _address.setEditable(false);
                         _changeAddress.setText("...");
                     }
-<<<<<<< HEAD
-                } else if(button.equals("mail")) { // mail
-=======
                 } else if(button.equals("mail")) {                                          // mail
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
                     if(!_mail.isEditable()) {
                         _mail.setEditable(true);
                         _changeMail.setText("OK");
@@ -355,11 +342,7 @@ class AccountPanel {
                         _mail.setEditable(false);
                         _changeMail.setText("...");
                     }
-<<<<<<< HEAD
-                } else if(button.equals("phone")) { // phone
-=======
                 } else if(button.equals("phone")) {                                         // phone
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
                     if(!_phone.isEditable()) {
                         _phone.setEditable(true);
                         _changePhone.setText("OK");
@@ -376,43 +359,6 @@ class AccountPanel {
                         _phone.setEditable(false);
                         _changePhone.setText("...");
                     }
-<<<<<<< HEAD
-                } else if(button.equals("room")) { // room
-                    if(!_room.isEditable()) {
-                        _room.setEditable(true);
-                        _changeRoom.setText("OK");
-                    } else {
-                        int newRoom = Integer.parseInt(_room.getText());
-                        try {
-                            Persons.changeStaff(_staffCode.getText(), "room", newRoom);
-                        } catch(SQLException e1) {
-                            _room.setText((String) v.elementAt(0).elementAt(6));
-                            _room.setEditable(false);
-                            _changeRoom.setText("...");
-                        }
-                        _room.setText(String.valueOf(newRoom));
-                        _room.setEditable(false);
-                        _changeRoom.setText("...");
-                    }
-                } else if(button.equals("cath")) { // cathedra
-                    if(!_cath.isEditable()) {
-                        _cath.setEditable(true);
-                        _changeCath.setText("OK");
-                    } else {
-                        String newValue = _cath.getText();
-                        try {
-                            Persons.changeStaff(_staffCode.getText(), "cathedral", newValue);
-                        } catch(SQLException e1) {
-                            _cath.setText((String) v.elementAt(0).elementAt(12));
-                            _cath.setEditable(false);
-                            _changeCath.setText("...");
-                        }
-                        _cath.setText(String.valueOf(newValue));
-                        _cath.setEditable(false);
-                        _changeCath.setText("...");
-                    }
-                } else if(button.equals("post")) { // post
-=======
                 } else if(button.equals("room")) {                                         // room
                     if(!_room.isEditable()) {
                         _room.setEditable(true);
@@ -448,7 +394,6 @@ class AccountPanel {
                         _changeCath.setText("...");
                     }
                 } else if(button.equals("post")) {                                          // post
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
                     if(!_post.isEditable()) {
                         _post.setEditable(true);
                         _changePost.setText("OK");
@@ -522,8 +467,4 @@ class AccountPanel {
     private void Vis(boolean v, JComponent... c) {
         for(JComponent i: c) i.setVisible(v);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> branch 'master' of https://github.com/krzysztofbaranski/project_usos.git
