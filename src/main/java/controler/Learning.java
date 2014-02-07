@@ -20,9 +20,9 @@ public class Learning {
 
 
     public static String getGroupTeachersSQL(long groupId) {
-        return "SELECT persons.id, fname, lname "
+        return "SELECT persons.id, fname, lname, academic_title "
                 + "from persons join staff_groups on (staff_id = persons.id) "
-                + "join groups on (group_id = groups.id) "
+                + "join groups on (group_id = groups.id) left join staff_details on staff_details.person_id = persons.id "
                 + "where groups.id = " + groupId;
     }
 

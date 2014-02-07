@@ -36,7 +36,7 @@ public class GroupDetails {
         vClasses = Utility.getData(Learning.getClasses(groupId));
 
         StringBuilder classesString = new StringBuilder();
-        for(Vector<Object> w : vClasses)
+        for (Vector<Object> w : vClasses)
             classesString.append(w.get(0) + "\t" + w.get(1) + "-" + w.get(2) + "\tsala " + w.get(3) + "\n");
 
         titlePane.setText("" + vGeneral.get(0).get(1));
@@ -49,7 +49,8 @@ public class GroupDetails {
             }
 
         });
-        mainInfoPane.setText(vGeneral.get(0).get(2) + "\nRok " + vGeneral.get(0).get(3) + "/" + ((Integer) vGeneral.get(0).get(3) + 1) + ", semestr " + vGeneral.get(0).get(4) + "\nLiczba godzin: " + vGeneral.get(0).get(7) + "\nZajęcia:\n" + classesString);
+        mainInfoPane.setText(vGeneral.get(0).get(2) + "\nRok " + vGeneral.get(0).get(3) + "/" + ((Integer) vGeneral.get(0).get(3) + 1) + ", semestr " + vGeneral.get(0).get(4)
+                + "\nLiczba godzin: " + vGeneral.get(0).get(7) + "\nZajęcia:\n" + classesString);
 
 
         /**** oceny ****/
@@ -58,7 +59,8 @@ public class GroupDetails {
 
         TableModel marksModel = new AbstractTableModel() {
 
-            private final Object[] columnNames = {"prowadzący", "ocena", "opis", "uwagi", "data"};
+            private final Object[] columnNames = {"prowadzący",
+                    "ocena", "opis", "uwagi", "data"};
 
             public String getColumnName(int column) {
                 return columnNames[column].toString();
@@ -73,7 +75,7 @@ public class GroupDetails {
             }
 
             public Object getValueAt(int row, int col) {
-                if(col == 0) return vMarks.get(row).get(1) + " " + vMarks.get(row).get(2);
+                if (col == 0) return vMarks.get(row).get(1) + " " + vMarks.get(row).get(2);
                 return vMarks.get(row).get(col + 2);
             }
         };
@@ -84,8 +86,8 @@ public class GroupDetails {
             public void mouseClicked(MouseEvent e) {
                 int row = oceny.rowAtPoint(new Point(e.getX(), e.getY()));
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
-                if(row == -1) return;
-                if(col == 0) {
+                if (row == -1) return;
+                if (col == 0) {
                     app.Window.mainFrame.setContentPane(new TeacherDetails((long) vMarks.get(row).get(0)).getRoot());
                     app.Window.mainFrame.setVisible(true);
                     //TODO
@@ -118,8 +120,8 @@ public class GroupDetails {
             public void mouseClicked(MouseEvent e) {
                 int row = oceny.rowAtPoint(new Point(e.getX(), e.getY()));
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
-                if(row == -1) return;
-                if(col == 0) {
+                if (row == -1) return;
+                if (col == 0) {
                     app.Window.mainFrame.setContentPane(new TeacherDetails((long) vTeachers.get(row).get(0)).getRoot());
                     app.Window.mainFrame.setVisible(true);
                     //TODO
@@ -128,7 +130,7 @@ public class GroupDetails {
 
         });
 
-        /****************************** uczestnicy ********************************************************/
+/****************************** uczestnicy ********************************************************/
 
         vStudents = Utility.getData(Learning.getGroupStudentsSQL(groupId, true));
         TableModel studentsModel = new AbstractTableModel() {
@@ -142,7 +144,7 @@ public class GroupDetails {
             }
 
             public Object getValueAt(int row, int col) {
-                if(col == 0) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
+                if (col == 0) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
                 return vStudents.get(row).get(3);
             }
         };
@@ -153,8 +155,8 @@ public class GroupDetails {
             public void mouseClicked(MouseEvent e) {
                 int row = oceny.rowAtPoint(new Point(e.getX(), e.getY()));
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
-                if(row == -1) return;
-                if(col == 0) {
+                if (row == -1) return;
+                if (col == 0) {
                     app.Window.mainFrame.setContentPane(new StudentDetails((long) vStudents.get(row).get(0)).getRoot());
                     app.Window.mainFrame.setVisible(true);
                     //TODO

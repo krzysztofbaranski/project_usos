@@ -26,7 +26,8 @@ public class MarksPanel {
         v = Utility.getData(Learning.getMarks(-1, User.person_id, false));
 
         TableModel dataModel = new AbstractTableModel() {
-            private final Object[] columnNames = {"prowadzący", "grupa", "ocena", "opis", "uwagi", "data"};
+            private final Object[] columnNames = {"prowadzący", "grupa",
+                    "ocena", "opis", "uwagi", "data"};
 
             public String getColumnName(int column) {
                 return columnNames[column].toString();
@@ -41,7 +42,7 @@ public class MarksPanel {
             }
 
             public Object getValueAt(int row, int col) {
-                if(col == 0) return v.get(row).get(1) + " " + v.get(row).get(2);
+                if (col == 0) return v.get(row).get(1) + " " + v.get(row).get(2);
                 return v.get(row).get(col + 3);
             }
         };
@@ -53,13 +54,13 @@ public class MarksPanel {
             public void mouseClicked(MouseEvent e) {
                 int row = table1.rowAtPoint(new Point(e.getX(), e.getY()));
                 int col = table1.columnAtPoint(new Point(e.getX(), e.getY()));
-                if(row == -1) return;
-                if(col == 0) {
+                if (row == -1) return;
+                if (col == 0) {
                     app.Window.mainFrame.setContentPane(new TeacherDetails((long) v.get(row).get(0)).getRoot());
                     app.Window.mainFrame.setVisible(true);
                     //TODO
                 }
-                if(col == 1) {
+                if (col == 1) {
                     System.out.println(v.get(row).get(3));
                     app.Window.mainFrame.setContentPane(new GroupDetails((long) v.get(row).get(3)).getRoot());
                     app.Window.mainFrame.setVisible(true);
