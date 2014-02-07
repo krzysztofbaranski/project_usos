@@ -63,8 +63,8 @@ public class Persons {
 
         try {
             Utility.updateData(insert.toString());
-        } catch (Exception e) {
-            //TODO
+        } catch (SQLException e) {
+            throw e.getNextException();
         }
 
     }
@@ -87,7 +87,7 @@ public class Persons {
                                 String academic_title,
                                 Integer room,
                                 String post,
-                                Integer cathedral_id) throws Throwable {
+                                Integer cathedral_id) throws SQLException {
         StringBuilder insert = new StringBuilder("INSERT INTO staff(staff_code,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,phone,mail,academic_title,room,post,cathedral_id) VALUES('");
         insert.append(staffCode).append('\'').append(',')
                 .append('\'').append(fName).append('\'').append(',')
@@ -107,8 +107,8 @@ public class Persons {
 
         try {
             Utility.updateData(insert.toString());
-        } catch (Exception e) {
-            //TODO
+        } catch (SQLException e) {
+            throw e.getNextException();
         }
 
     }
@@ -132,8 +132,8 @@ public class Persons {
         update.append(" WHERE student_book=").append(studentBook);
         try {
             Utility.updateData(update.toString());
-        } catch (Exception e) {
-            //TODO
+        } catch (SQLException e) {
+            throw e.getNextException();
         }
     }
 
@@ -155,8 +155,8 @@ public class Persons {
         update.append(" WHERE staff_code=").append(staffCode);
         try {
             Utility.updateData(update.toString());
-        } catch (Exception e) {
-            //TODO
+        } catch (SQLException e) {
+            throw e.getNextException();
         }
     }
 
@@ -204,8 +204,8 @@ public class Persons {
 
         try {
             Utility.updateData(update.toString());
-        } catch (Exception e) {
-            //TODO
+        } catch (SQLException e) {
+            throw e.getNextException();
         }
     }
 

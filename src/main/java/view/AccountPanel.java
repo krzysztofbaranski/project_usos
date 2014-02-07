@@ -6,7 +6,6 @@ import app.Window;
 import controler.Persons;
 import controler.Utility;
 
-import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
@@ -18,8 +17,9 @@ import java.util.Vector;
 
 /**
  * Created by krzysztof on 06/02/14.
+ *
  */
-public class AccountPanel {
+class AccountPanel {
     private JPanel menu;
     private JLabel _name;
     private JLabel _status;
@@ -138,7 +138,11 @@ public class AccountPanel {
         removePhoto.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Utility.updateData("update persons set photo = null where id = " + User.person_id);
+                try {
+                    Utility.updateData("update persons set photo = null where id = " + User.person_id);
+                } catch(SQLException e1) {
+                    JOptionPane.showConfirmDialog(Window.mainFrame,"Nie można usunąć","Error",JOptionPane.ERROR_MESSAGE);
+                }
                 User.photo = null;
                 removePhoto.setEnabled(false);
 
@@ -149,7 +153,7 @@ public class AccountPanel {
     }
 
     public AccountPanel(final String mail) {
-        Vector<Vector<Object>> v = null;
+        Vector<Vector<Object>> v;
         v = Utility.getData("select id,fname,lname,(select name from statuses where id=status_id),address,mail,phone from persons where mail ='"+mail+"'");
 
         final Long id = (Long) v.elementAt(0).elementAt(0);
@@ -257,7 +261,11 @@ public class AccountPanel {
             removePhoto.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    Utility.updateData("update persons set photo = null where id = " + id);
+                    try {
+                        Utility.updateData("update persons set photo = null where id = " + id);
+                    } catch(SQLException e1) {
+                        JOptionPane.showConfirmDialog(Window.mainFrame, "Nie można usunąć", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
                     removePhoto.setEnabled(false);
 
                     Window.mainFrame.setContentPane(new AccountPanel(mail).getRoot());

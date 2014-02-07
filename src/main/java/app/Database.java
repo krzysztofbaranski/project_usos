@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class Database {
     private static boolean _lock = false;
     public static Connection connection = null;
-    public static long timeToClose = 1; // in minutes
+    private static final long timeToClose = 1; // in minutes
 
 
     /**

@@ -4,8 +4,6 @@ import app.Window;
 import controler.Utility;
 
 import javax.swing.*;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.TableModel;
 import java.awt.event.MouseAdapter;
@@ -16,16 +14,14 @@ import java.util.Vector;
 /**
  * Created by krzysztof on 06/02/14.
  */
-public class SearchResultPanel {
+class SearchResultPanel {
     private JTable table1;
     private JPanel root;
-    private String query;
     private Vector<Vector<Object>> ret;
 
     public SearchResultPanel(final String[] columnNames, String _query) {
-        query = _query;
         try {
-            ret = Utility.getDataWithException(query);
+            ret = Utility.getDataWithException(_query);
         } catch(SQLException e) {
             JOptionPane.showConfirmDialog(Window.mainFrame,"Błąd zapytania","Error",JOptionPane.ERROR_MESSAGE);
         }
@@ -58,7 +54,7 @@ public class SearchResultPanel {
 
             @Override
             public String getColumnName(int col) {
-                return columnNames[col].toString();
+                return columnNames[col];
             }
         };
 

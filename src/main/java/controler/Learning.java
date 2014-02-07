@@ -9,9 +9,9 @@ import java.util.Vector;
  */
 public class Learning {
 
-    public static String getGroupSQL(int groupId) {
+    public static String getGroupSQL(long groupId) {
         return "SELECT groups.id, groups.name,"
-                + "group_types.type_name, year, semester,"
+                + "group_types.type_name, year, semester, course_id, "
                 + "courses.name, (select hours_per_semester(" + groupId +
                 ")) from (groups join group_types on "
                 + "(groups.type = group_types.id)) join courses on "
@@ -19,7 +19,7 @@ public class Learning {
     }
 
 
-    public static String getGroupTeachersSQL(int groupId) {
+    public static String getGroupTeachersSQL(long groupId) {
         return "SELECT persons.id, fname, lname "
                 + "from persons join staff_groups on (staff_id = persons.id) "
                 + "join groups on (group_id = groups.id) "
@@ -27,7 +27,7 @@ public class Learning {
     }
 
 
-    public static String getGroupStudentsSQL(int groupId, boolean branchInfoToo) {
+    public static String getGroupStudentsSQL(long groupId, boolean branchInfoToo) {
         return "select persons.id, fname, lname "
                 + ((branchInfoToo) ? ("branch_id, students_branches.semester ") : "")
                 + "from groups join students_branches__groups "
@@ -37,24 +37,24 @@ public class Learning {
 
     }
 
-    public static List<Long> getStudentIds(int id)
+    public static List<Long> getStudentIds(long id)
     {
         Vector<Vector<Object>> resVect = Utility.getData("select id from "
                 + "students_branches where student_id = " +id);
-        LinkedList<Long> l = new LinkedList<>();
+        LinkedList<Long> l = new LinkedList<Long>();
         for (Vector v : resVect)
             l.add((Long)v.get(0));
         return l;
     }
 
 
-    public static String getStudentIdFromStudentBranchId(int SBid)
+    public static String getStudentIdFromStudentBranchId(long SBid)
     {
         return "select student_id from students_branches where id = " +  SBid;
     }
 
 
-    public static boolean groupDetailsPermissionTeacher (int groupId) {
+    public static boolean groupDetailsPermissionTeacher (long groupId) {
         Vector<Vector<Object>> vres;
         vres = Utility.getData("SELECT (select count(*) from "
                 + "staff_groups join groups on (group_id = groups.id) "
@@ -63,7 +63,7 @@ public class Learning {
         return (boolean)vres.get(0).get(0);
     }
 
-    public static boolean groupDetailsPermissionStudent (int groupId) {
+    public static boolean groupDetailsPermissionStudent (long groupId) {
 
         if(app.User.studentsBranchesIds.isEmpty()) return false;
         Vector<Vector<Object>> vres =
@@ -75,7 +75,7 @@ public class Learning {
         return (boolean)vres.get(0).get(0);
     }
 
-    public static String getClasses (int groupId) {
+    public static String getClasses (long groupId) {
         return "select * from classes where group_id = " + groupId;
     }
 
@@ -87,7 +87,7 @@ public class Learning {
      * @return
      */
 
-    public static String getMarks (int groupId, int studentId, boolean onlyFinal) {
+    public static String getMarks (long groupId, long studentId, boolean onlyFinal) {
         boolean allCourses = (groupId == -1);
         boolean allStudents = (studentId == -1);
         String res =  "select " +
@@ -111,8 +111,8 @@ public class Learning {
     /**
      * @param semNr must be 1 or 2
      */
-    public static String getAverage (int studentId, int branchId, int year,
-                                     int semNr) {
+    public static String getAverage (long studentId, long branchId, long year,
+                                     long semNr) {
         return "select average(" + studentId + ", " + branchId + ", " +
                 year + ", " + semNr + ")";
     }
@@ -121,12 +121,12 @@ public class Learning {
      * This function can be called during registration to warn someone who wants
      * to sign up to other-branch group.
      */
-    public static boolean isItMyBranch(int groupId, int branchId){
+    public static boolean isItMyBranch(long groupId, long branchId){
         return (boolean)Utility.getData("select is_it_my_branch(" + groupId +
                 ", " + branchId + ")").get(0).get(0);
     }
 
-    public static String getBranch (int branchId)
+    public static String getBranch (long branchId)
     {
         return "select branches.id, branches.name, institute, institutes.name,"
                 + "semesters_amt from branches join institutes "
@@ -136,18 +136,18 @@ public class Learning {
     /**
      * @param semester -1 means all the courses
      */
-    public static String getCoursesOnBranch (int branchId, int semester,
-                                             boolean dontPrintOptional, boolean dontPrintObligatory)
+    public static String getCoursesOnBranch (long branchId, long semester,
+                                             boolean dontPrlongOptional, boolean dontPrlongObligatory)
     {
         return "select courses.id, courses.name, courses.ects, semester_of_branch, "
                 + "obligatory from courses join branches_courses "
                 + "on course_id = courses.id where branch_id = " + branchId +
                 (semester != -1 ? " and semester_of_branch = " + semester : "") +
-                (dontPrintObligatory ? " and not obligatory " : "") +
-                (dontPrintOptional ? " and obligatory " : "");
+                (dontPrlongObligatory ? " and not obligatory " : "") +
+                (dontPrlongOptional ? " and obligatory " : "");
     }
 
-    public static String getCourse(int courseId)
+    public static String getCourse(long courseId)
     {
         return "select name, ects from courses where id = " + courseId;
     }
@@ -156,7 +156,7 @@ public class Learning {
      * @param year -1 means all groups. Argument semester shall be ignored
      * in this case
      */
-    public static String getCourseGroups(int courseId, int year, int semester)
+    public static String getCourseGroups(long courseId, long year, long semester)
     {
         return "select groups.id, name, type_name " +
                 (year == -1 ? ", year, semester " : "") +
@@ -165,7 +165,7 @@ public class Learning {
                 (year != -1 ? "and year = " + year + " and semester = " + semester : "");
     }
 
-    public static String getFinalMarks (int studentBranchId)
+    public static String getFinalMarks (long studentBranchId)
     {
         return "select courses.id, courses.name, "
                 + "(select get_final_mark( "+studentBranchId + ", course_id))"

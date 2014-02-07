@@ -101,7 +101,7 @@ public class Utility {
      * @param insert
      * @return
      */
-    public static void updateData(String insert) {
+    public static void updateData(String insert) throws SQLException {
         try {
             Database.lock();
             if(Database.connection == null || Database.connection.isClosed())
@@ -125,7 +125,7 @@ public class Utility {
             Database.unlock();
         } catch(SQLException e) {
             Database.unlock();
-            e.printStackTrace();
+            throw e.getNextException();
         }
     }
 
@@ -145,17 +145,17 @@ public class Utility {
         for (Object o : values)
             if(count++ % 2 == 0) {
                 if(start)
-                    columnsString.append("" + o);
+                    columnsString.append("").append(o);
                 else
-                    columnsString.append(", " + o);
+                    columnsString.append(", ").append(o);
             }
             else {
                 if(start) {
                     start = false;
-                    valuesString.append("" + myToString(o));
+                    valuesString.append("").append(myToString(o));
                 }
                 else
-                    valuesString.append(", " + myToString(o));
+                    valuesString.append(", ").append(myToString(o));
             }
 
         System.out.println(columnsString);
@@ -229,8 +229,7 @@ public class Utility {
             while(rs.next()) {
                 byte[] imgBytes = rs.getBytes(1);
                 if(imgBytes != null) try {
-                    Image img = ImageIO.read(new ByteArrayInputStream(imgBytes));
-                    return img;
+                    return ImageIO.read(new ByteArrayInputStream(imgBytes));
                 } catch(IOException e) {
                     e.printStackTrace();
                 }

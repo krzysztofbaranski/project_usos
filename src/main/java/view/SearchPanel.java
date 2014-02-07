@@ -1,24 +1,18 @@
 package view;
 
-import app.User;
 import app.Window;
-import controler.Utility;
 
-import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.event.ListDataListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Vector;
 
 /**
  * Created by krzysztof on 05/02/14.
  */
-public class SearchPanel {
+class SearchPanel {
     private JPanel menu;
     private JCheckBox advCheckBox;
     private JButton searchButton;

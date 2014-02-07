@@ -8,7 +8,7 @@ import java.awt.*;
 /**
  * Created by krzysztof on 05/02/14.
  */
-public class MainPanel {
+class MainPanel {
     private JPanel root;
 
     public MainPanel() { slider1.addChangeListener(new ChangeListener() {
