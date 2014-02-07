@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49f88057-4af1-4dae-82a0-68a5f9d22882" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controler/Persons.java" afterPath="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/create.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/drop.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="usos.iws" />
@@ -96,7 +94,7 @@
       <file leaf-file-name="Persons.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.033163264" vertical-offset="286" max-vertical-offset="3315">
+            <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -285,6 +283,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,7 +542,11 @@
       <created>1391799290921</created>
       <updated>1391799290921</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="poprawione account">
+      <created>1391814944217</created>
+      <updated>1391814944217</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -939,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="-0.033163264" vertical-offset="286" max-vertical-offset="3315">
+        <state line="22" column="7" selection-start="524" selection-end="524" vertical-scroll-proportion="0.6964286" vertical-offset="0" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
