@@ -67,7 +67,7 @@ public class LoginPage {
                             User.photo = User.photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
                         }
 
- 
+
                         Window.mainFrame.setContentPane(new MainPanel().getRoot());
                         Window.mainFrame.setTitle("USOS");
                         Window.mainFrame.setVisible(true);
