@@ -4,7 +4,9 @@ import app.*;
 import app.Window;
 import controler.Utility;
 
+import javax.jws.soap.SOAPBinding;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
@@ -30,7 +32,7 @@ public class LoginPage {
                             "'), 'hex') = (select passwd from passwords where person_id = (select id from persons where mail = '" +
                             _mail.getText() + "')),(select id from persons where mail = '" + _mail.getText() + "')");
                     //System.out.println(v);
-                    if((boolean) v.elementAt(0).elementAt(0)) {
+                    if(v.elementAt(0).elementAt(0) != null && (boolean) v.elementAt(0).elementAt(0)) {
 
                         User.person_id = (Long) v.elementAt(0).elementAt(1);
 
@@ -42,7 +44,10 @@ public class LoginPage {
                         User.mail = (String) v.elementAt(0).elementAt(4);
                         User.status = (String) v.elementAt(0).elementAt(5);
                         User.phone = (String) v.elementAt(0).elementAt(6);
-
+                        User.photo = Utility.getPhoto(User.person_id);
+                        if(User.photo != null) {
+                            User.photo = User.photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
+                        }
 
 
                         Window.mainFrame.setContentPane(new MainPanel().getRoot());
@@ -53,7 +58,7 @@ public class LoginPage {
                         // permission denied
                     }
                 } catch(Throwable exc) {
-                    System.out.println(v);
+                    //System.out.println(v);
                     exc.printStackTrace();
                     _mail.setText("");
                     _passwd.setText("");

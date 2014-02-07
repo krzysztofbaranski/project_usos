@@ -3,7 +3,11 @@ package controler;
 import app.Database;
 import app.Window;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
+import java.io.*;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -162,5 +166,83 @@ public class Utility {
             return false;
         }
         return true;
+    }
+
+    /**
+     *
+     * update photo
+     *
+     */
+    public static void updatePhoto(Long person_id, File file) {
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(file);
+        } catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        Database.lock();
+        try {
+            if(Database.connection == null || Database.connection.isClosed())
+                try {
+                    Database.connect();
+                } catch(SQLException e) {
+                    int confirm = JOptionPane.showOptionDialog(Window.mainFrame, "Nie można połączyć się z bazą danych! Spróbować ponownie?", "Error", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE, null, null, null);
+                    if(confirm == JOptionPane.NO_OPTION) {
+                        System.exit(1);
+                    }
+                }
+
+            PreparedStatement ps = Database.connection.prepareStatement("update persons set photo = ? where id = " + person_id);
+            ps.setBinaryStream(1, fis, (int)file.length());
+            ps.executeUpdate();
+            //zamykam polaczenie
+            ps.close();
+            Database.unlock();
+        } catch(SQLException e) {
+            e.printStackTrace();
+            Database.unlock();
+        }
+    }
+
+
+    /**
+     *
+     * get photo
+     *
+     */
+    public static Image getPhoto(Long person_id) {
+        Database.lock();
+        try {
+            if(Database.connection == null || Database.connection.isClosed())
+                try {
+                    Database.connect();
+                } catch(SQLException e) {
+                    int confirm = JOptionPane.showOptionDialog(Window.mainFrame, "Nie można połączyć się z bazą danych! Spróbować ponownie?", "Error", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE, null, null, null);
+                    if(confirm == JOptionPane.NO_OPTION) {
+                        System.exit(1);
+                    }
+                }
+
+            PreparedStatement ps = Database.connection.prepareStatement("select photo from persons where id = " + person_id);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()) {
+                byte[] imgBytes = rs.getBytes(1);
+                if(imgBytes != null) try {
+                    Image img = ImageIO.read(new ByteArrayInputStream(imgBytes));
+                    return img;
+                } catch(IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            //zamykam polaczenie
+            ps.close();
+            Database.unlock();
+        } catch(SQLException e) {
+            e.printStackTrace();
+            Database.unlock();
+        }
+        return null;
     }
 }

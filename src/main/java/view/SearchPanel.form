@@ -93,6 +93,7 @@
                   <font style="2"/>
                   <selected value="false"/>
                   <text value="Zaawansowane wyszukiwanie"/>
+                  <visible value="true"/>
                 </properties>
               </component>
               <component id="f4e16" class="javax.swing.JFormattedTextField" binding="_studentBook">
@@ -251,15 +252,19 @@
                       <horizontalAlignment value="4"/>
                     </properties>
                   </component>
-                  <component id="7b7ef" class="javax.swing.JComboBox" binding="_status">
+                  <component id="76741" class="javax.swing.JFormattedTextField" binding="_status">
                     <constraints>
-                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
                     </constraints>
                     <properties/>
                   </component>
-                  <component id="256af" class="javax.swing.JComboBox" binding="_department">
+                  <component id="36e15" class="javax.swing.JFormattedTextField" binding="_department">
                     <constraints>
-                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="170" height="-1"/>
+                      </grid>
                     </constraints>
                     <properties/>
                   </component>

@@ -1,5 +1,6 @@
 package app;
 
+import java.awt.*;
 import java.util.LinkedList;
 
 /**
@@ -14,6 +15,7 @@ public class User {
     public static String address;
     public static String mail;
     public static String phone;
+    public static Image photo;
     public static LinkedList<Long> studentsBranchesIds = new LinkedList<>();
     public static String studentsBranchesIdsAsSQLSet = null;
 }
