@@ -1,5 +1,6 @@
 package view;
 
+import app.Settings;
 import app.User;
 import app.Window;
 
@@ -20,8 +21,14 @@ class MainMenu {
     private JButton _logout;
     private JPanel menu;
     private JButton _marks;
+    private JButton addPerson;
 
     public MainMenu() {
+        if(User.person_id != Settings.superuser) {
+            addPerson.setVisible(false);
+        }
+
+
         // MAIN PANEL
         _main.addActionListener(new ActionListener() {
             @Override
@@ -68,6 +75,14 @@ class MainMenu {
                 User.phone = null;
 
                 Window.mainFrame.setContentPane(new LoginPage().getRoot());
+                Window.mainFrame.setVisible(true);
+            }
+        });
+
+        addPerson.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Window.mainFrame.setContentPane(new AddPerson().getRoot());
                 Window.mainFrame.setVisible(true);
             }
         });

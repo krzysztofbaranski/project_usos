@@ -45,6 +45,7 @@ class AccountPanel {
     private JLabel _roomLabel;
     private JLabel _cathLabel;
     private JLabel _postLabel;
+    private JButton addButton;
 
     /**
      * Moje konto
@@ -245,6 +246,13 @@ class AccountPanel {
         _changeRoom.addActionListener(listener);
         _changeCath.addActionListener(listener);
         _changePost.addActionListener(listener);
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Window.mainFrame.setContentPane(new AddPerson(_mail.getText()).getRoot());
+                Window.mainFrame.setVisible(true);
+            }
+        });
     }
 
 
@@ -446,8 +454,16 @@ class AccountPanel {
             }
         });
 
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Window.mainFrame.setContentPane(new AddPerson(_mail.getText()).getRoot());
+                Window.mainFrame.setVisible(true);
+            }
+        });
+
         if(User.person_id != Settings.superuser) {
-            Vis(false, _changeRoom, _changePost, _changeCath, _changeAddress, _changeMail, _changePhone, addPhoto, removePhoto);
+            Vis(false, _changeRoom, _changePost, _changeCath, _changeAddress, _changeMail, _changePhone, addPhoto, removePhoto,addButton);
         }
 
 

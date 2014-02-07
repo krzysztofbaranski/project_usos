@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f88057-4af1-4dae-82a0-68a5f9d22882" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AddPerson.form" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.form" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controler/Persons.java" afterPath="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/StudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/StudentDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="usos.iws" />
@@ -80,53 +73,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginPage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="69" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1261">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Persons.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="77" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupDetails.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddPerson.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AddPerson.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="7" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="884">
+            <state line="215" column="26" selection-start="10935" selection-end="10935" vertical-scroll-proportion="0.39617488" vertical-offset="2468" max-vertical-offset="2951">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1029#2858#0" expanded="true" />
-                <element signature="e#2847#2848#0" expanded="true" />
+                <element signature="e#1042#1043#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPerson.form" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
+      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="127" column="0" selection-start="3804" selection-end="3804" vertical-scroll-proportion="0.0" vertical-offset="1378" max-vertical-offset="3133">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountPanel.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchResultPanel.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form">
+      <file leaf-file-name="AccountPanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="465" column="136" selection-start="21355" selection-end="21355" vertical-scroll-proportion="0.0" vertical-offset="5316" max-vertical-offset="5889">
+              <folding>
+                <element signature="e#10625#10892#0" expanded="true" />
+                <element signature="e#10881#10882#0" expanded="true" />
+                <element signature="e#20897#21164#0" expanded="true" />
+                <element signature="e#21153#21154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPerson.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
@@ -167,14 +157,16 @@
         <option value="$PROJECT_DIR$/src/main/java/app/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/app/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
-        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchPanel.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
       </list>
     </option>
   </component>
@@ -216,6 +208,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,7 +334,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" />
+              <option name="myItemId" value="MainMenu" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,7 +364,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" />
+              <option name="myItemId" value="AddPerson" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -396,34 +390,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="AccountPanel" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -442,8 +414,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,6 +495,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -550,19 +533,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -668,7 +638,11 @@
       <created>1391787511499</created>
       <updated>1391787511499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dodawanie ludzi">
+      <created>1391790134183</created>
+      <updated>1391790134183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -692,14 +666,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="19" width="1366" height="749" extended-state="6" />
+    <frame x="0" y="19" width="1366" height="749" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24904798" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.105864435" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -712,8 +686,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3265306" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -736,7 +710,8 @@
     <MESSAGE value="Caly dotychczasowy projekt" />
     <MESSAGE value="Strona studenta i pracownika" />
     <MESSAGE value="Nic szczególnego&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nic szczególnego&#10;" />
+    <MESSAGE value="Dodawanie ludzi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodawanie ludzi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -746,13 +721,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1053">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -761,7 +729,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
-          <folding />
+          <folding>
+            <element signature="e#10625#10892#0" expanded="true" />
+            <element signature="e#10881#10882#0" expanded="true" />
+            <element signature="e#20897#21164#0" expanded="true" />
+            <element signature="e#21153#21154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -782,7 +755,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="40" selection-start="6441" selection-end="6441" vertical-scroll-proportion="0.0" vertical-offset="2145" max-vertical-offset="3744">
-          <folding />
+          <folding>
+            <element signature="e#10625#10892#0" expanded="true" />
+            <element signature="e#10881#10882#0" expanded="true" />
+            <element signature="e#20897#21164#0" expanded="true" />
+            <element signature="e#21153#21154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,7 +803,12 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1040">
-          <folding />
+          <folding>
+            <element signature="e#1292#1545#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#2453#2705#0" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,11 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="0" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.0" vertical-offset="1196" max-vertical-offset="1352">
@@ -967,23 +945,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Java/jdk1.7.0_45/src.zip!/java/io/ByteArrayInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="0" selection-start="2917" selection-end="2917" vertical-scroll-proportion="0.33333334" vertical-offset="932" max-vertical-offset="3458" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="37" selection-start="7383" selection-end="7383" vertical-scroll-proportion="0.0" vertical-offset="2990" max-vertical-offset="3276">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.form">
@@ -1026,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="69" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1048,9 +1005,52 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-0.2761438" vertical-offset="832" max-vertical-offset="5772">
+        <state line="85" column="49" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.0" vertical-offset="519" max-vertical-offset="1014">
+          <folding>
+            <element signature="e#1292#1545#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#2453#2705#0" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Java/jdk1.7.0_45/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="482" column="0" selection-start="17756" selection-end="17756" vertical-scroll-proportion="0.0" vertical-offset="5833" max-vertical-offset="15366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="1380" selection-end="3003" vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1066">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.0" vertical-offset="2911" max-vertical-offset="3302">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="0" selection-start="3804" selection-end="3804" vertical-scroll-proportion="0.0" vertical-offset="1378" max-vertical-offset="3133">
           <folding />
         </state>
       </provider>
@@ -1060,27 +1060,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="77" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3289">
-          <folding />
+        <state line="465" column="136" selection-start="21355" selection-end="21355" vertical-scroll-proportion="0.0" vertical-offset="5316" max-vertical-offset="5889">
+          <folding>
+            <element signature="e#10625#10892#0" expanded="true" />
+            <element signature="e#10881#10882#0" expanded="true" />
+            <element signature="e#20897#21164#0" expanded="true" />
+            <element signature="e#21153#21154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="884">
+        <state line="215" column="26" selection-start="10935" selection-end="10935" vertical-scroll-proportion="0.39617488" vertical-offset="2468" max-vertical-offset="2951">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1029#2858#0" expanded="true" />
-            <element signature="e#2847#2848#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
   </component>

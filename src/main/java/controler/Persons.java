@@ -62,6 +62,7 @@ public class Persons {
                 .append(")");
 
         try {
+            System.out.println(insert);
             Utility.updateData(insert.toString());
         } catch (SQLException e) {
             throw e.getNextException();
@@ -129,7 +130,7 @@ public class Persons {
                                 String phone,
                                 String mail,
                                 String status) throws SQLException {
-        StringBuilder insert = new StringBuilder("INSERT INTO staff(staff_code,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,phone,mail,academic_title,room,post,cathedral_id) VALUES('");
+        StringBuilder insert = new StringBuilder("INSERT INTO persons(fname,sname,lname,pesel,date_of_birth,place_of_birth,address,phone,mail,status_id) VALUES('");
         insert.append('\'').append(fName).append('\'').append(',')
                 .append((sName != null ? "'"+sName+"'" : "null")).append(',')
                 .append('\'').append(lName).append('\'').append(',')
