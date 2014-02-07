@@ -4,6 +4,7 @@ import app.User;
 import app.Window;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -71,4 +72,5 @@ class MainMenu {
             }
         });
     }
+
 }

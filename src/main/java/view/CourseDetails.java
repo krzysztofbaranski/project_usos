@@ -1,6 +1,7 @@
 package view;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * Created by Użytkownik on 07.02.14.
@@ -18,4 +19,5 @@ public class CourseDetails {
 
         return root;
     }
+
 }

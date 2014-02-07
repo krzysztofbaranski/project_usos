@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f88057-4af1-4dae-82a0-68a5f9d22882" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/MainPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controler/Persons.java" afterPath="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.java" afterPath="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/StudentDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/StudentDetails.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.java" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherDetails.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="usos.iws" />
@@ -70,32 +83,52 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1248">
+            <state line="66" column="69" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1261">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupDetails.form" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Persons.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="77" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupDetails.form" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountPanel.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+      <file leaf-file-name="AddPerson.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="7" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="884">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1029#2858#0" expanded="true" />
+                <element signature="e#2847#2848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPerson.form" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AccountPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
-              <folding />
-            </state>
+      <file leaf-file-name="SearchResultPanel.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -109,8 +142,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Krzysztof BaranskiStr" />
         <option value="Krzysztof Baranski" />
+        <option value="Krzysztof BaranskiStr" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/controler/ColumnAutoSizer.java" />
@@ -134,12 +166,15 @@
         <option value="$PROJECT_DIR$/src/main/java/controler/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/Settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form" />
-        <option value="$PROJECT_DIR$/src/main/java/view/SearchPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/app/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
+        <option value="$PROJECT_DIR$/src/main/java/view/SearchPanel.form" />
+        <option value="$PROJECT_DIR$/src/main/java/controler/Persons.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/AddPerson.form" />
       </list>
     </option>
   </component>
@@ -305,7 +340,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StudentDetails" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,127 +370,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SearchResultPanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SearchPanel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MainMenu" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LoginPage" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DB" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GroupDetails" />
+              <option name="myItemId" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,7 +453,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="project.propGUI" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -749,7 +664,11 @@
       <created>1391707119797</created>
       <updated>1391707119797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nic szczególnego&#10;">
+      <created>1391787511499</created>
+      <updated>1391787511499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -786,14 +705,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255086" sideWeight="0.501904" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.4996192" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32394367" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4996192" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3233909" sideWeight="0.49809596" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.4996192" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -816,7 +735,8 @@
     </option>
     <MESSAGE value="Caly dotychczasowy projekt" />
     <MESSAGE value="Strona studenta i pracownika" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strona studenta i pracownika" />
+    <MESSAGE value="Nic szczególnego&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nic szczególnego&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -826,18 +746,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="6214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1053">
@@ -1071,13 +979,6 @@
         <state line="105" column="0" selection-start="2917" selection-end="2917" vertical-scroll-proportion="0.33333334" vertical-offset="932" max-vertical-offset="3458" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="7930" selection-end="7930" vertical-scroll-proportion="0.0" vertical-offset="2419" max-vertical-offset="2808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controler/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="230" column="37" selection-start="7383" selection-end="7383" vertical-scroll-proportion="0.0" vertical-offset="2990" max-vertical-offset="3276">
@@ -1104,16 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/StudentDetails.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -1135,26 +1026,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="69" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchResultPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/SearchPanel.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="5967">
+        <state line="64" column="28" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-0.2761438" vertical-offset="832" max-vertical-offset="5772">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Persons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="70" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1053">
+        <state line="141" column="77" selection-start="6256" selection-end="6256" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="3289">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="2657" selection-end="2657" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="884">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1029#2858#0" expanded="true" />
+            <element signature="e#2847#2848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/AddPerson.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>

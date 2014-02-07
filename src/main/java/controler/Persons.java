@@ -37,7 +37,7 @@ public class Persons {
      * add student
      *
      */
-    public static void addStudent(int studentBook,
+    public static void addStudent(Long studentBook,
                                   String fName,
                                   String sName,
                                   String lName,
@@ -49,7 +49,7 @@ public class Persons {
                                   String mail) throws SQLException {
         StringBuilder insert = new StringBuilder("INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,phone,mail) VALUES('");
 
-        insert.append(Integer.toString(studentBook)).append('\'').append(',')
+        insert.append(Long.toString(studentBook)).append('\'').append(',')
                 .append('\'').append(fName).append('\'').append(',')
                 .append((sName != null ? "'"+sName+"'" : "null")).append(',')
                 .append('\'').append(lName).append('\'').append(',')
@@ -103,6 +103,43 @@ public class Persons {
                 .append((room != null ? room : "null")).append(',')
                 .append('\'').append(post).append('\'').append(',')
                 .append((cathedral_id != null ? cathedral_id : "null"))
+                .append(")");
+
+        try {
+            Utility.updateData(insert.toString());
+        } catch (SQLException e) {
+            throw e.getNextException();
+        }
+
+    }
+
+
+    /**
+     *
+     * add person
+     *
+     */
+    public static void addPerson(String fName,
+                                String sName,
+                                String lName,
+                                String pesel,
+                                String dateOfBirth,
+                                String placeOfBirth,
+                                String address,
+                                String phone,
+                                String mail,
+                                String status) throws SQLException {
+        StringBuilder insert = new StringBuilder("INSERT INTO staff(staff_code,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,phone,mail,academic_title,room,post,cathedral_id) VALUES('");
+        insert.append('\'').append(fName).append('\'').append(',')
+                .append((sName != null ? "'"+sName+"'" : "null")).append(',')
+                .append('\'').append(lName).append('\'').append(',')
+                .append('\'').append(pesel).append('\'').append(',')
+                .append('\'').append(dateOfBirth).append('\'').append(',')
+                .append('\'').append(placeOfBirth).append('\'').append(',')
+                .append((address != null ? "'"+address+"'" : "null")).append(',')
+                .append((phone != null ? "'"+phone+"'" : "null")).append(',')
+                .append((mail != null ? "'"+mail+"'" : "null")).append(',')
+                .append("(select id from statuses where name = '" + status+"')")
                 .append(")");
 
         try {

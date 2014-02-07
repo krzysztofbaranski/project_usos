@@ -17,7 +17,6 @@ import java.util.Vector;
 
 /**
  * Created by krzysztof on 06/02/14.
- *
  */
 class AccountPanel {
     private JPanel menu;
@@ -48,11 +47,7 @@ class AccountPanel {
     private JLabel _postLabel;
 
     /**
-     *
-     *
      * Moje konto
-     *
-     *
      */
     public AccountPanel() {
         // ladowanie etykiet
@@ -70,17 +65,17 @@ class AccountPanel {
 
         // student
         if(_status.equals("student")) {
-            Vis(false,_staffCode,_post,_cath,_room,_changeCath,_changePost,_changeRoom,_cathLabel,_postLabel,_roomLabel,_staffCodeLabel);
+            Vis(false, _staffCode, _post, _cath, _room, _changeCath, _changePost, _changeRoom, _cathLabel, _postLabel, _roomLabel, _staffCodeLabel);
             _studentBook.setText(User.studentBook);
-        // teacher
+            // teacher
         } else if(_status.equals("teacher")) {
-            Vis(false,_studentBook,_studentBookLabel);
+            Vis(false, _studentBook, _studentBookLabel);
             _room.setText(User.room);
             _cath.setText(User.cathedral);
             _staffCode.setText(User.staffCode);
             _post.setText(User.post);
         } else {
-            Vis(false,_staffCode,_post,_cath,_room,_changeCath,_changePost,_changeRoom,_cathLabel,_postLabel,_roomLabel,_staffCodeLabel,_studentBook,_studentBookLabel);
+            Vis(false, _staffCode, _post, _cath, _room, _changeCath, _changePost, _changeRoom, _cathLabel, _postLabel, _roomLabel, _staffCodeLabel, _studentBook, _studentBookLabel);
         }
 
 
@@ -96,7 +91,7 @@ class AccountPanel {
                     Utility.updatePhoto(User.person_id, file);
                     User.photo = Utility.getPhoto(User.person_id);
                     if(User.photo != null) {
-                        User.photo = User.photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
+                        User.photo = User.photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
                     }
                     removePhoto.setEnabled(true);
                     Window.mainFrame.setContentPane(new AccountPanel().getRoot());
@@ -131,7 +126,7 @@ class AccountPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println(((JButton)e.getSource()).getName());
-                String button = ((JButton)e.getSource()).getName();
+                String button = ((JButton) e.getSource()).getName();
                 if(button.equals("address")) {                                              // address
                     if(!_address.isEditable()) {
                         _address.setEditable(true);
@@ -175,7 +170,7 @@ class AccountPanel {
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(User.person_id,"phone",newPhone);
+                            Persons.changePerson(User.person_id, "phone", newPhone);
                         } catch(SQLException e1) {
                             _phone.setText(User.phone);
                             _phone.setEditable(false);
@@ -193,7 +188,7 @@ class AccountPanel {
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(User.person_id,"phone",newPhone);
+                            Persons.changePerson(User.person_id, "phone", newPhone);
                         } catch(SQLException e1) {
                             _phone.setText(User.phone);
                             _phone.setEditable(false);
@@ -211,7 +206,7 @@ class AccountPanel {
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(User.person_id,"phone",newPhone);
+                            Persons.changePerson(User.person_id, "phone", newPhone);
                         } catch(SQLException e1) {
                             _phone.setText(User.phone);
                             _phone.setEditable(false);
@@ -229,7 +224,7 @@ class AccountPanel {
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(User.person_id,"phone",newPhone);
+                            Persons.changePerson(User.person_id, "phone", newPhone);
                         } catch(SQLException e1) {
                             _phone.setText(User.phone);
                             _phone.setEditable(false);
@@ -254,7 +249,6 @@ class AccountPanel {
 
 
     /**
-     *
      * konto uzytkownika
      *
      * @param mail
@@ -263,7 +257,7 @@ class AccountPanel {
         final Vector<Vector<Object>> v = Utility.getData("select persons.id,fname,lname,(select name as status from statuses where id=status_id),address,mail," +
                 "phone,student_book,staff_code,academic_title,room,post," +
                 "(select name from cathedrals where id=cathedral_id) " +
-                "from persons full join student_books on student_books.person_id = id full join staff_details on staff_details.person_id=id where mail='" + mail+"'");
+                "from persons full join student_books on student_books.person_id = id full join staff_details on staff_details.person_id=id where mail='" + mail + "'");
 
         final Long id = (Long) v.elementAt(0).elementAt(0);
         _name.setText((v.elementAt(0).elementAt(9) == null ? "" : v.elementAt(0).elementAt(9) + " ") + v.elementAt(0).elementAt(1) + " " + v.elementAt(0).elementAt(2));
@@ -274,7 +268,7 @@ class AccountPanel {
 
         Image _photo = Utility.getPhoto(id);
         if(_photo != null) {
-            _photo = _photo.getScaledInstance(120,140, Image.SCALE_SMOOTH);
+            _photo = _photo.getScaledInstance(120, 140, Image.SCALE_SMOOTH);
             _photoLabel.setIcon(new ImageIcon(_photo));
             removePhoto.setEnabled(true);
         }
@@ -282,20 +276,18 @@ class AccountPanel {
         // student
         if(_status.getText().equals("student")) {
             //System.out.println(v.elementAt(0).elementAt(7));
-            Vis(false,_staffCode,_post,_cath,_room,_changeCath,_changePost,_changeRoom,_cathLabel,_postLabel,_roomLabel,_staffCodeLabel);
+            Vis(false, _staffCode, _post, _cath, _room, _changeCath, _changePost, _changeRoom, _cathLabel, _postLabel, _roomLabel, _staffCodeLabel);
             _studentBook.setText(String.valueOf(v.elementAt(0).elementAt(7)));
             // teacher
         } else if(_status.getText().equals("teacher")) {
-            Vis(false,_studentBook,_studentBookLabel);
+            Vis(false, _studentBook, _studentBookLabel);
             _room.setText(String.valueOf(v.elementAt(0).elementAt(10)));
             _cath.setText((String) v.elementAt(0).elementAt(12));
             _staffCode.setText((String) v.elementAt(0).elementAt(8));
             _post.setText((String) v.elementAt(0).elementAt(11));
         } else {
-            Vis(false,_staffCode,_post,_cath,_room,_changeCath,_changePost,_changeRoom,_cathLabel,_postLabel,_roomLabel,_staffCodeLabel,_studentBook,_studentBookLabel);
+            Vis(false, _staffCode, _post, _cath, _room, _changeCath, _changePost, _changeRoom, _cathLabel, _postLabel, _roomLabel, _staffCodeLabel, _studentBook, _studentBookLabel);
         }
-
-
 
 
         /**
@@ -309,7 +301,7 @@ class AccountPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //System.out.println(((JButton)e.getSource()).getName());
-                String button = ((JButton)e.getSource()).getName();
+                String button = ((JButton) e.getSource()).getName();
                 if(button.equals("address")) {                                              // address
                     if(!_address.isEditable()) {
                         _address.setEditable(true);
@@ -317,7 +309,7 @@ class AccountPanel {
                     } else {
                         String newAddress = _address.getText();
                         try {
-                            Persons.changePerson(id,"address",newAddress);
+                            Persons.changePerson(id, "address", newAddress);
                         } catch(SQLException e1) {
                             _address.setText((String) v.elementAt(0).elementAt(4));
                             _address.setEditable(false);
@@ -351,7 +343,7 @@ class AccountPanel {
                     } else {
                         String newPhone = _phone.getText();
                         try {
-                            Persons.changePerson(id,"phone",newPhone);
+                            Persons.changePerson(id, "phone", newPhone);
                         } catch(SQLException e1) {
                             _phone.setText((String) v.elementAt(0).elementAt(6));
                             _phone.setEditable(false);
@@ -455,7 +447,7 @@ class AccountPanel {
         });
 
         if(User.person_id != Settings.superuser) {
-            Vis(false,_changeRoom,_changePost,_changeCath,_changeAddress,_changeMail,_changePhone,addPhoto,removePhoto);
+            Vis(false, _changeRoom, _changePost, _changeCath, _changeAddress, _changeMail, _changePhone, addPhoto, removePhoto);
         }
 
 
@@ -467,6 +459,7 @@ class AccountPanel {
     }
 
     private void Vis(boolean v, JComponent... c) {
-        for(JComponent i: c) i.setVisible(v);
+        for(JComponent i : c) i.setVisible(v);
     }
+
 }
