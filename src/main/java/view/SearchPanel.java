@@ -65,7 +65,7 @@ class SearchPanel {
                     columnNames = new String[]{"Imię", "Nazwisko", "E-mail", "Status"};
                 }
 
-
+                where.add("persons.id <> 1");
                 if(!_staffCode.getText().equals("")) where.add("staff_code='" + _staffCode.getText() + "'");
                 if(!_acadTitle.getText().equals("")) where.add("academic_title='" + _acadTitle.getText() + "'");
                 if(!_studentBook.getText().equals("")) where.add("student_book=" + _studentBook.getText());
