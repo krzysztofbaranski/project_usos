@@ -25,6 +25,9 @@
         <module name="usos" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="usos" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
