@@ -87,26 +87,31 @@
       <file leaf-file-name="Learning.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controler/Learning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="64" selection-start="5302" selection-end="5431" vertical-scroll-proportion="-8.230769" vertical-offset="1979" max-vertical-offset="3060">
+            <state line="93" column="108" selection-start="3776" selection-end="3776" vertical-scroll-proportion="-10.846154" vertical-offset="1265" max-vertical-offset="3043">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarksPanel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MarksPanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="58" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1224">
+            <state line="62" column="124" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.92263055" vertical-offset="373" max-vertical-offset="1989">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
+      <file leaf-file-name="LoginPage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="7" selection-start="6048" selection-end="6051" vertical-scroll-proportion="-12.346154" vertical-offset="2161" max-vertical-offset="2652">
-              <folding />
+            <state line="41" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1479">
+              <folding>
+                <element signature="e#538#3771#0" expanded="true" />
+                <element signature="e#3760#3761#0" expanded="true" />
+                <element signature="e#3809#3810#0" expanded="true" />
+                <element signature="e#3836#3837#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,34 +120,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/AccountPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="0" selection-start="10160" selection-end="10160" vertical-scroll-proportion="0.0" vertical-offset="6964" max-vertical-offset="7701">
-              <folding>
-                <element signature="e#4391#10170#0" expanded="true" />
-                <element signature="e#12919#18634#0" expanded="true" />
-                <element signature="e#18623#18624#0" expanded="true" />
-                <element signature="e#18970#19760#0" expanded="true" />
-                <element signature="e#19749#19750#0" expanded="true" />
-                <element signature="e#19801#20408#0" expanded="true" />
-                <element signature="e#20397#20398#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CourseDetails.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/CourseDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="7" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.33333334" vertical-offset="426" max-vertical-offset="1496">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -157,6 +134,22 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/view/StudentDetails.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarksPanel.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupDetails.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="2652">
               <folding />
             </state>
           </provider>
@@ -194,15 +187,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/controler/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/SearchResultPanel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/MainMenu.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/nic.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.form" />
         <option value="$PROJECT_DIR$/src/main/java/app/Settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controler/Learning.java" />
-        <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/aaa.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/GridConstraints.java" />
@@ -214,6 +203,11 @@
         <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.form" />
         <option value="$PROJECT_DIR$/src/main/java/view/AccountPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/CourseDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/GroupDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MarksPanel.form" />
+        <option value="$PROJECT_DIR$/src/main/java/controler/Learning.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/MarksPanel.java" />
       </list>
     </option>
   </component>
@@ -317,6 +311,66 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_usos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MarksPanel" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="usos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project_usos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainMenu" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -691,7 +745,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28833553" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28833553" sideWeight="0.49809596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -935,23 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.form">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controler/University.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16601562" vertical-offset="0" max-vertical-offset="512">
@@ -992,53 +1029,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="28" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.24944812" vertical-offset="669" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/GridConstraints.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="30" selection-start="119" selection-end="122" vertical-scroll-proportion="0.19729207" vertical-offset="0" max-vertical-offset="517">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Learning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="64" selection-start="5302" selection-end="5431" vertical-scroll-proportion="-8.230769" vertical-offset="1979" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/BranchDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1394">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1594#2131#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/StudentDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
@@ -1049,28 +1042,6 @@
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/BranchDetails.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="58" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/CourseDetails.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
@@ -1090,19 +1061,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/CourseDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="7" selection-start="6048" selection-end="6051" vertical-scroll-proportion="-12.346154" vertical-offset="2161" max-vertical-offset="2652">
+        <state line="45" column="54" selection-start="1351" selection-end="1351" vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="1496">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.33519554" vertical-offset="372" max-vertical-offset="1088">
+          <folding>
+            <element signature="e#1136#1389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MainMenu.form">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/BranchDetails.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/BranchDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="1394">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1594#2131#0" expanded="true" />
+            <element signature="e#2119#2120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="35" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/CourseDetails.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/StudentDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="7" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.33333334" vertical-offset="426" max-vertical-offset="1496">
+        <state line="16" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/CourseDetails.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/GroupDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="2652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1350" selection-end="1350" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1479">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#538#3771#0" expanded="true" />
+            <element signature="e#3760#3761#0" expanded="true" />
+            <element signature="e#3809#3810#0" expanded="true" />
+            <element signature="e#3836#3837#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controler/Learning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="108" selection-start="3776" selection-end="3776" vertical-scroll-proportion="-10.846154" vertical-offset="1265" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/MarksPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="124" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.92263055" vertical-offset="373" max-vertical-offset="1989">
+          <folding />
         </state>
       </provider>
     </entry>
