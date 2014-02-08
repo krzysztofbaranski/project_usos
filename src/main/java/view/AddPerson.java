@@ -79,7 +79,6 @@ public class AddPerson {
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        //e1.printStackTrace();
                     }
                 } else if(_status.getText().equals("teacher")) {
                     try {
@@ -87,7 +86,7 @@ public class AddPerson {
                     } catch(Exception e1) {
                         ok = false;
                         JOptionPane.showMessageDialog(Window.mainFrame, "Błąd! Sprawdź poprawność danych!", "Error", JOptionPane.ERROR_MESSAGE);
-                        //e1.printStackTrace();
+                        e1.printStackTrace();
                     }
                 } else {
                     try {

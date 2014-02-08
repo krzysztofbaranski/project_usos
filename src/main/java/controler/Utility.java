@@ -158,8 +158,6 @@ public class Utility {
                     valuesString.append(", ").append(myToString(o));
             }
 
-        System.out.println(columnsString);
-        System.out.println(valuesString);
         try {
             Utility.updateData("insert into " + relation + " (" + columnsString + ") values (" + valuesString + ")");
         } catch (Exception e){

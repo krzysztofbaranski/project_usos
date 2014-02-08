@@ -13,7 +13,7 @@ import java.awt.event.MouseEvent;
 import java.util.Vector;
 
 /**
- * Created by Użytkownik on 07.02.14.
+ * Created by UĹĽytkownik on 07.02.14.
  */
 public class GroupDetails {
     private JPanel root;
@@ -25,13 +25,14 @@ public class GroupDetails {
     private JTable prowadzacy;
     private JScrollPane scrollUczestnicy;
     private JTable uczestnicy;
+    private JButton dodajOcene;
     Vector<Vector<Object>> vGeneral;
     Vector<Vector<Object>> vMarks;
     Vector<Vector<Object>> vClasses;
     Vector<Vector<Object>> vTeachers;
     Vector<Vector<Object>> vStudents;
 
-    public GroupDetails(long groupId) {
+    public GroupDetails(final long groupId) {
         vGeneral = Utility.getData(Learning.getGroupSQL(groupId));
         vClasses = Utility.getData(Learning.getClasses(groupId));
 
@@ -60,14 +61,14 @@ public class GroupDetails {
         TableModel marksModel = new AbstractTableModel() {
 
             private final Object[] columnNames = {(User.staffCode != null ? "student" : "prowadzący"),
-                    "ocena", "opis", "uwagi", "data"};
+                    "ocena", "opis", "uwagi", "data", "ocena końcowa"};
 
             public String getColumnName(int column) {
                 return columnNames[column].toString();
             }
 
             public int getColumnCount() {
-                return 5;
+                return 6;
             }
 
             public int getRowCount() {
@@ -88,18 +89,26 @@ public class GroupDetails {
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
                 if (row == -1) return;
                 if (col == 0) {
-                    app.Window.mainFrame.setContentPane(new TeacherDetails((long) vMarks.get(row).get(0)).getRoot());
+                      Vector<Vector<Object>> w = Utility.getData("select mail from persons where id = " + vMarks.get(row).get(0));
+                    app.Window.mainFrame.setContentPane(new AccountPanel((String)w.firstElement().firstElement()).getRoot());
                     app.Window.mainFrame.setVisible(true);
-                    //TODO
+
                 }
             }
 
         });
 
-        /****************************** prowadzący ********************************************************/
+
+        /****************************** prowadzÄ…cy ********************************************************/
 
         vTeachers = Utility.getData(Learning.getGroupTeachersSQL(groupId));
         TableModel teachersModel = new AbstractTableModel() {
+            private final Object[] columnNames = {"imię i nazwisko"};
+
+            public String getColumnName(int column) {
+                return columnNames[column].toString();
+            }
+
 
             public int getColumnCount() {
                 return 1;
@@ -122,9 +131,10 @@ public class GroupDetails {
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
                 if (row == -1) return;
                 if (col == 0) {
-                    app.Window.mainFrame.setContentPane(new TeacherDetails((long) vTeachers.get(row).get(0)).getRoot());
+                    Vector<Vector<Object>> w = Utility.getData("select mail from persons where id = " + vTeachers.get(row).get(0));
+                    app.Window.mainFrame.setContentPane(new AccountPanel((String)w.firstElement().firstElement()).getRoot());
                     app.Window.mainFrame.setVisible(true);
-                    //TODO
+
                 }
             }
 
@@ -135,8 +145,15 @@ public class GroupDetails {
         vStudents = Utility.getData(Learning.getGroupStudentsSQL(groupId, true));
         TableModel studentsModel = new AbstractTableModel() {
 
+            private final Object[] columnNames = {"numer osoby", "imię i nazwisko", "kierunek"};
+
+            public String getColumnName(int column) {
+                return columnNames[column].toString();
+            }
+
+
             public int getColumnCount() {
-                return 2;
+                return 3;
             }
 
             public int getRowCount() {
@@ -144,7 +161,8 @@ public class GroupDetails {
             }
 
             public Object getValueAt(int row, int col) {
-                if (col == 0) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
+                if (col == 0) return vStudents.get(row).get(0);
+                if (col == 1) return vStudents.get(row).get(1) + " " + vStudents.get(row).get(2);
                 return vStudents.get(row).get(3);
             }
         };
@@ -157,14 +175,26 @@ public class GroupDetails {
                 int col = oceny.columnAtPoint(new Point(e.getX(), e.getY()));
                 if (row == -1) return;
                 if (col == 0) {
-                    app.Window.mainFrame.setContentPane(new StudentDetails((long) vStudents.get(row).get(0)).getRoot());
+                    Vector<Vector<Object>> w = Utility.getData("select mail from persons where id = " + vStudents.get(row).get(0));
+                    app.Window.mainFrame.setContentPane(new AccountPanel((String)w.firstElement().firstElement()).getRoot());
                     app.Window.mainFrame.setVisible(true);
-                    //TODO
+
                 }
             }
 
         });
 
+
+        if(User.staffCode == null || !Learning.groupDetailsPermissionTeacher(groupId))
+            dodajOcene.setVisible(false);
+        else dodajOcene.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                app.Window.mainFrame.setContentPane(new AddMarkPanel(groupId, User.person_id).getRoot());
+                app.Window.mainFrame.setVisible(true);
+
+            }
+        });
 
     }
 

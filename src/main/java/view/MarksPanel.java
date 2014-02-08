@@ -14,7 +14,7 @@ import java.util.Vector;
 
 
 /**
- * Created by Użytkownik on 06.02.14.
+ * Created by UĹĽytkownik on 06.02.14.
  */
 public class MarksPanel {
     private JTable table1;
@@ -66,7 +66,6 @@ public class MarksPanel {
 
                     }
                     if (col == 1) {
-                        System.out.println(v.get(row).get(3));
                         app.Window.mainFrame.setContentPane(new GroupDetails((long) v.get(row).get(3)).getRoot());
                         app.Window.mainFrame.setVisible(true);
                     }

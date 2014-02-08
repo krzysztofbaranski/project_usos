@@ -13,7 +13,7 @@ public class Database {
     private static final long timeToClose = 1; // in minutes
 
 
-    /**
+    /** 
      *
      * Make connection to database
      *
