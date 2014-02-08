@@ -962,16 +962,17 @@ insert into staff_groups VALUES (12, 2);
 insert into branches_courses VALUES (1, 1, 3, 'true');
 insert into students_branches (student_id, branch_id, semester) VALUES (1, 1, 3);
 insert into students_branches (student_id, branch_id, semester) VALUES (2, 1, 3);
-insert into students_branches (student_id, branch_id, semester) VALUES (3, 1, 1);
-insert INTO students_branches__groups VALUES (1, 1);
+insert into students_branches (student_id, branch_id, semester) VALUES (3, 1, 3);
+insert into students_branches (student_id, branch_id, semester) VALUES (4, 1, 1);
 insert INTO students_branches__groups VALUES (2, 1);
-insert INTO students_branches__groups VALUES (1, 2);
+insert INTO students_branches__groups VALUES (3, 1);
 insert INTO students_branches__groups VALUES (2, 2);
-insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (1, 12, 2, 3.5, 'projekt', false);
+insert INTO students_branches__groups VALUES (3, 2);
+insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (3, 12, 2, 3.5, 'projekt', false);
 insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (2, 12, 2, 5, 'projekt', false);
 insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (2, 12, 2, 5, 'koncowa-cw', true);
 insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (2, 12, 1, 5, 'koncowa-wyk', true);
-insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (1, 12, 2, 3, 'koncowa-cw', true);
-insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (1, 12, 1, 2, 'koncowa-wyk', true);
+insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (3, 12, 2, 3, 'koncowa-cw', true);
+insert into marks (student_id , staff_id, group_id, mark, description, is_final_mark) VALUES (3, 12, 1, 2, 'koncowa-wyk', true);
 
                 
