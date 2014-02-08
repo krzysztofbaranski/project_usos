@@ -939,7 +939,6 @@ INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of
 INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,mail,phone) VALUES(100008,'Dariusz','Andrzej','Mirecki','93122764990','1993-12-27','Warszawa','Krakow',NULL,'869125469'); 
 INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,mail,phone) VALUES(100009,'Patryk',NULL,'Rydelek','93110246503','1993-11-02','Lublin','Krakow',NULL,'193728591'); 
 INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,mail,phone) VALUES(100010,'Karol','Julian','Czulej','92112364598','1992-11-23','Katowice','Lublin',NULL,'164859132'); 
-INSERT INTO students(student_book,first_name,second_name,last_name,pesel,date_of_birth,place_of_birth,address,mail,phone) VALUES(100011,'Jolanta',NULL,'Werochowska','91070268944','1991-07-02','Szczecin','Katowice',NULL,'164897516');
 INSERT into departments (name, address) values('WMiI', 'Lojasiewicza 6');
 INSERT into institutes (department_id, name, address) values(1, 'ZKiZIM', 'Lojasiewicza 6, 3 pietro');
 INSERT into cathedrals (institute_id, name, address) values(1, 'katedra algorytmiki', 'Lojasiewicza 6, pokoj 404');
