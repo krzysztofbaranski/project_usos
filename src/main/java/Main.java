@@ -6,7 +6,7 @@ import javax.swing.*;
 /**
  * Created by krzysztof on 05/02/14.
  */
-class Main {
+class Main { 
     public static void main(String[] args) {
         Window.mainFrame = new JFrame("LoginPage");
         Window.mainFrame.setContentPane(new LoginPage().getRoot());
